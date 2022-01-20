@@ -11,12 +11,12 @@ const MenuNav = ({ show }: Props) => {
     <>
       <div
         className={
-          'overflow-hidden animate-fade-in-down ' +
+          'overflow-hidden animate-fade-in-down z-30 ' +
           (show ? 'visible ' : 'hidden')
         }
       >
-        <div className='w-screen h-screen bg-sky-900 fixed overflow-y-scroll scrollbar scrollbar-thin hover:scrollbar-track-inherit scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-sky-200 scrollbar-track-transparent'>
-          <div className='pl-28 py-28 text-3xl text-sky-50 font-medium md:text-9xl flex flex-col gap-10'>
+        <div className='w-screen h-screen bg-sky-900 fixed overflow-y-scroll z-30 scrollbar scrollbar-thin hover:scrollbar-track-inherit scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-sky-200 scrollbar-track-transparent'>
+          <div className='pl-28 py-28 text-3xl text-sky-50 font-medium md:text-9xl flex flex-col gap-10 z-30'>
             <ListMenuNav link='/' title='Home' />
             <ListMenuNav link='/about' title='About' />
             <ListMenuNav link='/portofolio' title='Portofolio' />

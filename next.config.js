@@ -4,6 +4,12 @@ const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
   },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require('./scripts/sitemap-generator')
+    }
+    return config
+  },
 }
 
 module.exports = nextConfig

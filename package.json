@@ -4,17 +4,18 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@types/next-nprogress": "^1.4.1",
+    "globby": "^11.0.1",
     "next": "12.0.8",
     "next-seo": "^4.28.1",
     "nprogress": "^0.2.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "swr": "^1.1.2"
   },
   "devDependencies": {
     "@types/node": "17.0.9",
