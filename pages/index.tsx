@@ -10,11 +10,11 @@ import { Header } from '../components/Header'
 import { Nav } from '../components/Nav'
 
 const Home: NextPage = () => {
-  const router = useRouter()
+  const router = useRouter()  
 
   return (
     <>
-      <Header title='Home' url={router.pathname} />
+      <Header title='Home' url={`${router.asPath}`} />
       <Nav />
       <Body>
         <div className='grid grid-cols-1 md:grid-cols-2 mx-3 md:mx-auto max-w-6xl '>
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
               Welcome to my website
             </div>
             <div className='text-center md:text-left font-light text-xl md:text-3xl mt-3'>
-              My Name is Nur Kholiq Ansori, I'm a Computer Science who likes
+              My Name is Nur Kholiq Ansori, I&apos;m a Computer Science who likes
               Javascript Framework
             </div>
           </div>

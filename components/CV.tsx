@@ -1,13 +1,15 @@
 import * as React from 'react'
+import myPic from '../public/MyPic.jpg'
+import Image from 'next/image'
 
-interface ICVProps {}
+interface CVProps {}
 
-const CV: React.FunctionComponent<ICVProps> = (props) => {
+const CV: React.FunctionComponent<CVProps> = (props) => {
   return (
     <>
       <div className='w-96 md:w-1/2 mx-auto border-2 rounded-lg'>
         <div className='grid md:grid-flow-col p-10 border-b-2'>
-          <div className=''>FOTO</div>
+          <div className=''><Image src={myPic} placeholder='blur' /></div>
           <div className=''>ALAMAT</div>
           <div className='md:text-right'>ALAMAT</div>
         </div>

@@ -5,16 +5,16 @@ import Body from '../components/Body'
 import { Header } from '../components/Header'
 import { Nav } from '../components/Nav'
 
-const portofolio: NextPage = () => {
+const Portofolio: NextPage = () => {
   const router = useRouter()
 
   return (
     <>
-      <Header title='Portofolio' url={`${router.pathname}`} />
+      <Header title='Portofolio' url={`${router.asPath}`} />
       <Nav />
       <Body>PORTOFOLIO</Body>
     </>
   )
 }
 
-export default portofolio
+export default Portofolio

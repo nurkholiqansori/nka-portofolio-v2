@@ -7,13 +7,12 @@ import CV from '../components/CV'
 import { Header } from '../components/Header'
 import { Nav } from '../components/Nav'
 
-const about: NextPage = () => {
-
-  const router = useRouter()
+const About: NextPage = () => {
+  const Router = useRouter()
 
   return (
     <>
-      <Header title='About' url={`${router.pathname}`} />
+      <Header title='About' url={`${Router.asPath}`} />
       <Nav />
       <Body>
         <CV />
@@ -22,4 +21,4 @@ const about: NextPage = () => {
   )
 }
 
-export default about
+export default About
