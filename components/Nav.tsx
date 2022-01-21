@@ -1,48 +1,50 @@
 import React, { useState } from 'react'
 import MenuNav from './MenuNav'
 
-interface Props {}
-
-export const Nav = (props: Props) => {
+export const Nav = () => {
   const [show, setShow] = useState(false)
 
   return (
     <>
-      <div className='absolute -top-2 -left-2 bg-sky-800 w-28 h-28 rounded-br-full flex justify-center items-center z-30'>
+      <div className='top-0 left-1/2 -translate-x-1/2 bg-sky-800 backdrop-blur-md bg-opacity-70 w-28 h-16 rounded-b-full flex justify-center items-center z-30 absolute'>
         <div
-          className='flex justify-center items-center flex-col gap-2 p-3 rounded-lg cursor-pointer hover:bg-sky-900 w-10 relative -top-2 right-3'
+          className='text-white animate-bounce'
           onClick={() => setShow(!show)}
         >
-          <div
-            className={
-              'h-[.8px] bg-cyan-100 transition-transform ' +
-              (show ? 'w-8 -rotate-45 transform translate-y-1' : 'w-5')
-            }
-          ></div>
-          <div
-            className={
-              'h-[.8px] bg-cyan-100 transition-transform ' +
-              (show ? 'hidden' : 'w-5')
-            }
-          ></div>
-          <div
-            className={
-              'h-[.8px] bg-cyan-100 transition-transform ' +
-              (show ? 'w-8 rotate-45 transform -translate-y-1' : 'w-5')
-            }
-          ></div>
+          {show ? (
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              className='h-6 w-6'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth={2}
+                d='M5 15l7-7 7 7'
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              className='h-6 w-6'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth={2}
+                d='M19 9l-7 7-7-7'
+              />
+            </svg>
+          )}
         </div>
       </div>
-      <div
-        className={
-          'transition-all duration-700 transform translate-y-0 translate-x-0 rounded-none z-30 ' +
-          (show
-            ? 'ease-in'
-            : 'ease-out -translate-y-96 -translate-x-[100%] rounded-br-3xl')
-        }
-      >
-        <MenuNav show={show} />
-      </div>
+      <MenuNav show={show} />
     </>
   )
 }

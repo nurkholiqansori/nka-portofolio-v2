@@ -8,6 +8,8 @@ import Body from '../components/Body'
 import Carousel from '../components/Carousel'
 import { Header } from '../components/Header'
 import { Nav } from '../components/Nav'
+import logo from '../public/logo.png'
+
 
 const Home: NextPage = () => {
   const router = useRouter()  
@@ -21,6 +23,9 @@ const Home: NextPage = () => {
           <div className=''>
             <div className='text-center md:text-left font-light text-2xl md:text-6xl'>
               Welcome to my website
+            </div>
+            <div className='w-20 h-20 rounded-full overflow-hidden my-10 mx-auto md:mx-0'>
+              <Image src={logo} placeholder='blur' objectFit='cover' />
             </div>
             <div className='text-center md:text-left font-light text-xl md:text-3xl mt-3'>
               My Name is Nur Kholiq Ansori, I&apos;m a Computer Science who likes
