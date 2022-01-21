@@ -13,10 +13,10 @@ const Icon = ({ id, name, color, link, path }: Props) => {
   return (
     <>
       <Link href={link}>
-        <a title={name}>
+        <a title={name} target='_blank' rel='noopener noreferrer'>
           <div
             key={id}
-            className={(color ? (`bg-[${color}]`) : 'bg-sky-100') + ' p-2 m-2 w-10 h-10 flex justify-center items-center rounded-full hover:scale-95 cursor-pointer overflow-hidden'}
+            className={(color ? (`bg-[${color}]`) : 'bg-sky-100') + ' p-2 m-2 w-10 h-10 flex justify-center items-center rounded-full hover:scale-95 cursor-pointer overflow-hidden mx-auto'}
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'

@@ -10,7 +10,7 @@ interface Props {
 const nav = [
   {
     name: 'Home',
-    link: '',
+    link: '/',
   },
   {
     name: 'About',

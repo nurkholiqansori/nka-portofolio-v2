@@ -4,6 +4,7 @@ import Image from 'next/image'
 import useSWR from 'swr'
 import { data } from '../pages/api/data'
 import Icon from './Icon'
+import Timeline from './Timeline'
 
 
 const CV: React.FunctionComponent<any> = (props) => {
@@ -12,11 +13,11 @@ const CV: React.FunctionComponent<any> = (props) => {
   return (
     <>
       <div className='w-96 md:w-1/2 mx-auto mb-10 border-2 rounded-lg overflow-hidden'>
-        <div className='grid md:grid-flow-col gap-5 p-10 border-b-2 bg-sky-800'>
+        <div className='grid md:grid-flow-col gap-5 items-center p-10 border-b-2 bg-sky-800'>
           <div className='w-24 h-24 rounded-full overflow-hidden mx-auto z-0'>
             <Image src={myPic} placeholder='blur' objectFit='cover' />
           </div>
-          <div className='grid'>
+          <div className='grid items-center gap-3'>
             <div className='text-3xl font-semibold text-sky-50 text-opacity-80'>
               {data.myName}
             </div>
@@ -76,8 +77,10 @@ const CV: React.FunctionComponent<any> = (props) => {
             </div>
           </div>
         </div>
-        <div className='p-10 border-b-2 text-center bg-sky-100'>{data.description}</div>
-        <div className='p-10 bg-sky-50'>ISI</div>
+        <div className='p-10 border-b-2 text-center bg-sky-100 text-gray-500'>{data.description}</div>
+        <div className='p-10 bg-sky-50'>
+          <Timeline />
+        </div>
       </div>
     </>
   )

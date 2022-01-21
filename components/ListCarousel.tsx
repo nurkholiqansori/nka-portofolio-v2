@@ -21,9 +21,9 @@ const ListCarousel = ({ title, number, img, description, link }: Props) => {
         <Link href={link}>
           <a
             title={title}
-            className='hover:text-sky-300 text-lg after:content-link'
+            className='hover:text-sky-300 text-lg'
           >
-            {title}
+            {title} &#8641;
           </a>
         </Link>
       </div>
