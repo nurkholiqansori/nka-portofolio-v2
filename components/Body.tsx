@@ -6,7 +6,7 @@ interface Props {
 
 const Body = ({ children }: Props) => {
   return (
-    <div className='w-full h-full mt-28'>
+    <div className='w-full h-full mt-28 selection:bg-sky-400 selection:text-white'>
       {children}
     </div>
   )

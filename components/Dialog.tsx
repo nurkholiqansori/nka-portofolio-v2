@@ -151,7 +151,7 @@ const DialogPortofolio = ({
                 >
                   Close
                 </button>
-                {flowData.img ? (
+                {info ? '' : (flowData.img ? (
                   <Link href={flowData.img}>
                     <a
                       title='Full View'
@@ -169,7 +169,7 @@ const DialogPortofolio = ({
                   </Link>
                 ) : (
                   ''
-                )}
+                ))}
               </div>
             </div>
           </Transition.Child>
