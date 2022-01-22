@@ -25,7 +25,7 @@ const Home: NextPage = () => {
               Welcome to my website
             </div>
             <div className='w-20 h-20 rounded-full overflow-hidden my-10 mx-auto md:mx-0'>
-              <Image src={logo} placeholder='blur' objectFit='cover' />
+              <Image src={logo} placeholder='blur' objectFit='cover' alt='My logo' />
             </div>
             <div className='text-center md:text-left font-light text-xl md:text-3xl mt-3'>
               My Name is Nur Kholiq Ansori, I&apos;m a Computer Science who likes

@@ -132,10 +132,15 @@ const DialogPortofolio = ({
               ) : (
                 <div className='mt-2 max-h-72 overflow-auto scrollbar-thin scrollbar-thumb-sky-100 hover:scrollbar-thumb-sky-500 scrollbar-thumb-rounded-md'>
                   {flowData.img ? (
-                    <img
+                    <Image
                       src={flowData.img}
-                      className='w-full h-full m-auto'
+                      className='mt-5'
                       alt={'Documentation of ' + flowData.com}
+                      placeholder='blur'
+                      blurDataURL='iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAEUlEQVR42mOcuYkBAzAOZUEAxx8M+UokAfQAAAAASUVORK5CYII='
+                      objectFit='cover'
+                      width={400}
+                      height={1000}
                     />
                   ) : (
                     'No Image'
@@ -151,7 +156,9 @@ const DialogPortofolio = ({
                 >
                   Close
                 </button>
-                {info ? '' : (flowData.img ? (
+                {info ? (
+                  ''
+                ) : flowData.img ? (
                   <Link href={flowData.img}>
                     <a
                       title='Full View'
@@ -169,7 +176,7 @@ const DialogPortofolio = ({
                   </Link>
                 ) : (
                   ''
-                ))}
+                )}
               </div>
             </div>
           </Transition.Child>

@@ -26,7 +26,7 @@ const Github = () => {
               {/* <div className='w-full md:w-1/3 h-8 rounded-lg bg-gray-500 animate-pulse'></div>
               <div className='w-full md:w-1/3 h-8 rounded-lg bg-gray-500 animate-pulse'></div>
               <div className='w-full md:w-1/3 h-8 rounded-lg bg-gray-500 animate-pulse'></div> */}
-              <div className=''>AKUN</div>'
+              <div className=''>AKUN</div>
             </div>
             <div className='grid gap-1.5 col-span-2 md:col-span-1 justify-start items-start'>
               {/* <div className='w-full h-8 rounded-lg bg-gray-500 animate-pulse'></div>

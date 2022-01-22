@@ -13,7 +13,7 @@ const CV: React.FunctionComponent<any> = (props) => {
       <div className='w-96 md:w-1/2 mx-auto mb-10 border-2 rounded-lg overflow-hidden'>
         <div className='grid md:grid-flow-col gap-5 items-center p-10 border-b-2 bg-sky-800'>
           <div className='w-24 h-24 rounded-full overflow-hidden mx-auto z-0'>
-            <Image src={myPic} placeholder='blur' objectFit='cover' />
+            <Image src={myPic} placeholder='blur' objectFit='cover' alt='My Picture' />
           </div>
           <div className='grid items-center gap-3'>
             <div className='text-3xl font-semibold text-sky-50 text-opacity-80'>
