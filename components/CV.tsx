@@ -1,15 +1,13 @@
 import * as React from 'react'
 import myPic from '../public/MyPic.jpg'
 import Image from 'next/image'
+import Link from 'next/link'
 import useSWR from 'swr'
 import { data } from '../pages/api/data'
 import Icon from './Icon'
 import Timeline from './Timeline'
 
-
 const CV: React.FunctionComponent<any> = (props) => {
-
-
   return (
     <>
       <div className='w-96 md:w-1/2 mx-auto mb-10 border-2 rounded-lg overflow-hidden'>
@@ -65,19 +63,65 @@ const CV: React.FunctionComponent<any> = (props) => {
           <div className='md:text-right text-sky-50 text-opacity-70'>
             <div className='grid grid-cols-2 gap-2'>
               {data.contact.map((i) => (
-                <>
-                  <Icon key={i.id} name={i.name} link={i.link} color={i.color} path={i.path} />
-                </>
+                <div
+                  key={i.id}
+                  className={`bg-[#${i.color}] p-2 m-2 w-10 h-10 flex justify-center items-center rounded-full hover:scale-95 cursor-pointer overflow-hidden mx-auto text-white`}
+                >
+                  <Link href={i.link}>
+                    <a title={i.name} target='_blank' rel='noopener noreferrer'>
+                      <div>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          className='h-6 w-6'
+                          viewBox='0 0 24 24'
+                          fill='none'
+                          stroke='currentColor'
+                          role='img'
+                        >
+                          <path
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            strokeWidth={1}
+                            d={i.path}
+                          />
+                        </svg>
+                      </div>
+                    </a>
+                  </Link>
+                </div>
               ))}
               {data.socMed.map((i) => (
-                <>
-                  <Icon key={i.id} name={i.name} link={i.link} color={i.color} path={i.path} />
-                </>
+                <div
+                  key={i.id}
+                  className={`bg-[#${i.color}] p-2 m-2 w-10 h-10 flex justify-center items-center rounded-full hover:scale-95 cursor-pointer overflow-hidden mx-auto text-white`}
+                >
+                  <Link href={i.link}>
+                    <a title={i.name} target='_blank' rel='noopener noreferrer'>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        className='h-6 w-6'
+                        viewBox='0 0 24 24'
+                        fill='none'
+                        stroke='currentColor'
+                        role='img'
+                      >
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth={1}
+                          d={i.path}
+                        />
+                      </svg>
+                    </a>
+                  </Link>
+                </div>
               ))}
             </div>
           </div>
         </div>
-        <div className='p-10 border-b-2 text-center bg-sky-100 text-gray-500'>{data.description}</div>
+        <div className='p-10 border-b-2 text-center bg-sky-100 text-gray-500'>
+          {data.description}
+        </div>
         <div className='p-10 bg-sky-50'>
           <Timeline />
         </div>

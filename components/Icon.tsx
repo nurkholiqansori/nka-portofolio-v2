@@ -2,22 +2,22 @@ import Link from 'next/link'
 import React from 'react'
 
 type Props = {
-  id?: number
+  key?: number
   name: string
   color: string
   link: string
   path: string
 }
 
-const Icon = ({ id, name, color, link, path }: Props) => {
+const Icon = ({ key, name, color, link, path }: Props) => {
   return (
-    <>
+    <div
+      key={key}
+      className={`bg-[#${color}] p-2 m-2 w-10 h-10 flex justify-center items-center rounded-full hover:scale-95 cursor-pointer overflow-hidden mx-auto text-white`}
+    >
       <Link href={link}>
         <a title={name} target='_blank' rel='noopener noreferrer'>
-          <div
-            key={id}
-            className={`bg-[#${color}] p-2 m-2 w-10 h-10 flex justify-center items-center rounded-full hover:scale-95 cursor-pointer overflow-hidden mx-auto text-white`}
-          >
+          <div>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-6 w-6'
@@ -36,7 +36,7 @@ const Icon = ({ id, name, color, link, path }: Props) => {
           </div>
         </a>
       </Link>
-    </>
+    </div>
   )
 }
 

@@ -37,14 +37,14 @@ const MenuNav = ({ show }: Props) => {
       <Transition
         show={show}
         enter='transition-opacity duration-75'
-        enterFrom='opacity-0'
+        enterFrom='opacity-0 absolute -top-full'
         enterTo='opacity-100'
         leave='transition-opacity duration-300'
         leaveFrom='opacity-100'
         leaveTo='opacity-0'
       >
-        <div className='w-screen h-screen bg-sky-900 fixed overflow-y-scroll z-30 scrollbar scrollbar-thin hover:scrollbar-track-inherit scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-sky-200 scrollbar-track-transparent'>
-          <div className='pl-28 py-28 text-3xl text-sky-50 font-medium md:text-9xl flex flex-col gap-10 z-30'>
+        <div className='w-screen h-screen bg-sky-900 fixed top-0 overflow-y-scroll z-20 scrollbar scrollbar-thin hover:scrollbar-track-inherit scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-sky-200 scrollbar-track-transparent'>
+          <div className='pl-28 py-28 text-3xl text-sky-50 font-medium md:text-9xl flex flex-col gap-10'>
             {nav.map((i) => (
               <ListMenuNav key={i.name} link={i.link} title={i.name} />
             ))}

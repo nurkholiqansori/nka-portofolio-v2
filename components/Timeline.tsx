@@ -33,17 +33,15 @@ const Timeline = (props: Props) => {
         </div>
         <div className='pb-8 '>
           <p className='mb-2 text-xl font-bold text-gray-600'>Education</p>
-          <p className='text-gray-700'>
+          <div className='text-gray-700'>
             {data.study.map((i) => (
-              <>
                 <div key={i.id}>
                   <p>
                     {i.date} &#8213; {i.title} @ {i.sch}
                   </p>
                 </div>
-              </>
             ))}
-          </p>
+          </div>
         </div>
       </div>
 
@@ -70,10 +68,9 @@ const Timeline = (props: Props) => {
         </div>
         <div className='pt-1'>
           <p className='mb-2 text-lg font-bold text-gray-600'>Skill</p>
-          <p className='text-gray-700 grid gap-5 ml-1'>
+          <div className='text-gray-700 grid gap-5 ml-1'>
             {data.skill.map((i) => (
-              <>
-                <div className=''>
+                <div className='' key={i.id}>
                   <Link href={i.credential}>
                     <a title={i.title + ' from ' + i.company} target='_blank' rel='nofollow noopener noreferrer'>
                       <p className='font-medium'>{i.title}</p>
@@ -81,9 +78,8 @@ const Timeline = (props: Props) => {
                   </Link>
                   <p className=''>Published from {i.date}</p>
                 </div>
-              </>
             ))}
-          </p>
+          </div>
         </div>
       </div>
     </div>

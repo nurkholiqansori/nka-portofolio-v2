@@ -9,7 +9,7 @@ interface Props {
 
 const ListMenuNav = ({ link, title }: Props) => {
   return (
-    <div className='hover:md:border-l-[1px] hover:md:border-sky-300 px-5 py-3 z-30'>
+    <div className='hover:md:border-l-[1px] hover:md:border-sky-300 md:px-5 py-3 z-30'>
       <Link href={link}>
         <a title={title}>{title}</a>
       </Link>

@@ -89,7 +89,7 @@ const DialogPortofolio = ({
                         className='hover:text-black'
                         title={flowData.com}
                         target='_blank'
-                        rel='noopener noreferer'
+                        rel='noopener noreferrer'
                       >
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
@@ -156,7 +156,7 @@ const DialogPortofolio = ({
                     <a
                       title='Full View'
                       target='_blank'
-                      rel='noopener noreferer'
+                      rel='noopener noreferrer'
                       className='w-full'
                     >
                       <button
