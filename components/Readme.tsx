@@ -27,23 +27,18 @@ const Readme = ({ datas }: Props) => {
   )
   const Paragraph = ({ node, ...props }: any) => {
     const { children } = props
-    if (
-      children &&
-      children[0].props &&
-      children[0].props.src
-    ) {
-
-      return <div className='flex flex-wrap gap-2 my-5 justify-center' {...props} />
+    if (children && children[0].props && children[0].props.src) {
+      return (
+        <div className='flex flex-wrap gap-2 my-5 justify-center' {...props} />
+      )
     }
 
     return <div className='my-5 inline flex-wrap' {...props} />
   }
 
-
   return (
     <>
       <ReactMarkdown
-        children={frontMatter}
         remarkPlugins={[remarkHtml]}
         rehypePlugins={[rehypeSanitize]}
         components={{
@@ -52,7 +47,9 @@ const Readme = ({ datas }: Props) => {
           a: Linked,
           p: Paragraph,
         }}
-      />
+      >
+        {frontMatter}
+      </ReactMarkdown>
     </>
   )
 }
