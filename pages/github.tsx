@@ -10,8 +10,11 @@ import Readme from '../components/Readme'
 
 const fetcher = (url: any) => fetch(url).then((r) => r.json())
 
-const Github = ({ datas }: any) => {
+const Github = ({ datas, data2 }: any) => {
   const router = useRouter()
+
+  console.log(data2);
+  
 
   return (
     <>
@@ -63,13 +66,14 @@ const Github = ({ datas }: any) => {
                 <>
                   <div className='text-xl font-semibold'>Repositories</div>
                   <div className='text-justify'>
-                    <p className=' font-medium'>Ad consectetur voluptate.</p>
+                    {/* <p className=' font-medium'>Ad consectetur voluptate.</p>
                     <p>
                       Qui ex mollit irure minim consectetur aliqua esse
                       reprehenderit aliquip veniam eiusmod. Sunt nostrud ipsum
                       cupidatat aliquip mollit sit incididunt Lorem proident
                       occaecat ea ullamco.
-                    </p>
+                    </p> */}
+                    
                   </div>
                 </>
               )}
@@ -108,12 +112,7 @@ const Github = ({ datas }: any) => {
 }
 
 export async function getServerSideProps() {
-  // const { data, error } = await useSWR(
-  //   'https://api.github.com/repos/nurkholiqansori/nurkholiqansori/readme',
-  //   fetcher,
-  // )
 
-  let dataP
   const data = await fetch(
     'https://api.github.com/repos/nurkholiqansori/nurkholiqansori/readme',
   )
@@ -121,10 +120,14 @@ export async function getServerSideProps() {
     .then((data) => {
       return data
     })
-
-  // const datas = serialize(data.content)
+  const data2 = fetch('https://api.github.com/users/nurkholiqansori')
+    .then((r) => r.json())
+    .then((data2) => {
+      return data2
+    })
 
   const datas = JSON.stringify(data)
+  const datas2 = JSON.stringify(data2)
 
   if (!data) {
     return {
@@ -133,7 +136,7 @@ export async function getServerSideProps() {
   }
 
   return {
-    props: { datas }, // will be passed to the page component as props
+    props: { datas, datas2 },
   }
 }
 

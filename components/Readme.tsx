@@ -23,11 +23,11 @@ const Readme = ({ datas, }: Props) => {
     <img className='inline' alt={node.alt} {...props} />
   )
   const Linked = ({ node, ...props }: any) => (
-    <a style={{ color: 'tomato' }} {...props} />
+    <a className='text-sky-500 hover:text-sky-700' {...props} />
   )
 
   return (
-    <div>
+    <>
       <ReactMarkdown
         children={frontMatter}
         rehypePlugins={[rehypeSanitize]}
@@ -39,7 +39,7 @@ const Readme = ({ datas, }: Props) => {
           a: Linked,
         }}
       />
-    </div>
+    </>
   )
 }
 

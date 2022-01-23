@@ -2,9 +2,7 @@ import * as React from 'react'
 import myPic from '../public/MyPic.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
-import useSWR from 'swr'
 import { data } from '../pages/api/data'
-import Icon from './Icon'
 import Timeline from './Timeline'
 
 const CV: React.FunctionComponent<any> = (props) => {
