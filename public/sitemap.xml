@@ -2,19 +2,25 @@
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nurkholiqansori.me/about</loc>
-    <lastmod>2022-01-22T04:08:53.679Z</lastmod>
+    <lastmod>2022-01-23T06:15:26.707Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://nurkholiqansori.me/github</loc>
+    <lastmod>2022-01-23T06:15:26.707Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://nurkholiqansori.me</loc>
-    <lastmod>2022-01-22T04:08:53.679Z</lastmod>
+    <lastmod>2022-01-23T06:15:26.707Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://nurkholiqansori.me/portofolio</loc>
-    <lastmod>2022-01-22T04:08:53.679Z</lastmod>
+    <lastmod>2022-01-23T06:15:26.707Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
