@@ -13,7 +13,7 @@ import { data } from './api/data'
 const Github = ({ datas }: any) => {
   const router = useRouter()
   const [data1, setData1] = useState<any[]>([])
-  const [dataProfile, setDataProfile] = useState<any[]>([])
+  const [dataProfile, setDataProfile] = useState<any[any]>([])
 
   useEffect(() => {
     fetch('https://api.github.com/users/nurkholiqansori/repos')
@@ -37,7 +37,7 @@ const Github = ({ datas }: any) => {
         <div className='w-full md:m-10 mb-20'>
           <div className='grid grid-cols-2 mx-5 gap-10 items-start'>
             <div className='grid-cols-span-2 grid justify-end'>
-              {dataProfile.avatar_url ? (
+              {dataProfile?.avatar_url ? (
                 <div className='w-40 h-40 rounded-lg overflow-hidden'>
                   <Image
                     placeholder='blur'
