@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['img.shields.io'],
+    domains: ['img.shields.io', 'avatars.githubusercontent.com'],
     formats: ['image/avif', 'image/webp'],
   },
   webpack: (config, { isServer }) => {

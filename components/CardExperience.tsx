@@ -28,7 +28,7 @@ const CardExperience = (props: Props) => {
                   width={120}
                   height={120}
                   className=''
-                  alt={'Documentation W' + i.com}
+                  alt={'Documentation ' + i.com}
                 />
               </div>
               <p className='text-left ml-5 text-sky-50 0 flex gap-2 items-center'>
