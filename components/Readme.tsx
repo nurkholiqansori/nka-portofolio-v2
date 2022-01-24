@@ -2,9 +2,6 @@ import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import rehypeSanitize from 'rehype-sanitize'
 import remarkHtml from 'remark-html'
-import Link from 'next/link'
-import Image from 'next/image'
-import remarkUnwrapImages from 'remark-unwrap-images'
 
 type Props = {
   datas: any
@@ -37,7 +34,7 @@ const Readme = ({ datas }: Props) => {
   }
 
   return (
-    <>
+    <div className=''>
       <ReactMarkdown
         remarkPlugins={[remarkHtml]}
         rehypePlugins={[rehypeSanitize]}
@@ -50,7 +47,7 @@ const Readme = ({ datas }: Props) => {
       >
         {frontMatter}
       </ReactMarkdown>
-    </>
+    </div>
   )
 }
 
