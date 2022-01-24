@@ -11,7 +11,7 @@ const Portofolio: NextPage = () => {
 
   return (
     <>
-    <Header title='Portofolio' url={`${router.asPath}`} />
+      <Header title='Portofolio' url={`${router.asPath}`} />
       <Nav />
       <Body>
         <CardExperience />
