@@ -10,7 +10,7 @@ import Readme from '../components/Readme'
 import Repositories from '../components/Repositories'
 import { data } from './api/data'
 
-const Github = ({ datas, data2 }: any) => {
+const Github = ({ datas }: any) => {
   const router = useRouter()
   const [data1, setData1] = useState<any[]>([])
   const [dataProfile, setDataProfile] = useState<any[]>([])
@@ -28,7 +28,6 @@ const Github = ({ datas, data2 }: any) => {
       .then((result) => setDataProfile(result))
       .catch((error) => console.log('error', error))
   }, [])
-  console.log(dataProfile)
 
   return (
     <>
@@ -42,7 +41,7 @@ const Github = ({ datas, data2 }: any) => {
                 <div className='w-40 h-40 rounded-lg overflow-hidden'>
                   <Image
                     placeholder='blur'
-                    blurDataURL='iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAEUlEQVR42mOcuYkBAzAOZUEAxx8M+UokAfQAAAAASUVORK5CYII='
+                    blurDataURL='logo.png'
                     src={dataProfile.avatar_url}
                     width={200}
                     height={200}
@@ -58,32 +57,105 @@ const Github = ({ datas, data2 }: any) => {
             </div>
             <div className='grid gap-1.5'>
               {dataProfile.html_url ? (
-                <div className='flex'>
-                  {dataProfile.name}
-                  <Link href={dataProfile.html_url}>
-                    <a
-                      className='hover:text-sky-500'
-                      title={''}
-                      target='_blank'
-                      rel='noopener noreferrer'
+                <>
+                  <div className='flex'>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      className='h-6 w-6 mr-3'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      stroke='currentColor'
                     >
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        className='h-3 w-3'
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth={2}
+                        d='M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2'
+                      />
+                    </svg>
+                    {dataProfile.name}
+                    <Link href={dataProfile.html_url}>
+                      <a
+                        className='hover:text-sky-500'
+                        title={''}
+                        target='_blank'
+                        rel='noopener noreferrer'
                       >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          strokeWidth={2}
-                          d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
-                        />
-                      </svg>
-                    </a>
-                  </Link>
-                </div>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          className='h-3 w-3'
+                          fill='none'
+                          viewBox='0 0 24 24'
+                          stroke='currentColor'
+                        >
+                          <path
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            strokeWidth={2}
+                            d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
+                          />
+                        </svg>
+                      </a>
+                    </Link>
+                  </div>
+                  <div className='flex'>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      className='h-6 w-6 mr-3'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      stroke='currentColor'
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth={2}
+                        d='M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z'
+                      />
+                    </svg>{' '}
+                    {dataProfile.bio}
+                  </div>
+                  <div className='flex'>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      className='h-6 w-6 mr-3'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      stroke='currentColor'
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth={2}
+                        d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'
+                      />
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth={2}
+                        d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'
+                      />
+                    </svg>{' '}
+                    {dataProfile.location}
+                  </div>
+                  <div className='flex'>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      className='h-6 w-6 mr-3'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      stroke='currentColor'
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth={2}
+                        d='M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z'
+                      />
+                    </svg>{' '}
+                    {dataProfile.public_repos} Repositories
+                  </div>
+                </>
               ) : (
                 <>
                   <div className='w-full md:w-1/3 h-8 rounded-lg bg-gray-500 animate-pulse'></div>
@@ -110,19 +182,20 @@ const Github = ({ datas, data2 }: any) => {
                 </>
               )}
             </div>
-            <div className='grid gap-1.5 row-span-2 md:col-span-1'>
+            <div className='grid gap-1.5 row-span-2 col-span-2 md:col-span-1'>
               {data1 ? (
                 <>
                   <div className='text-xl font-semibold'>Repositories</div>
+
                   <Repositories data1={data1} />
                 </>
               ) : (
                 <>
-                  <div className='w-full h-8 rounded-lg bg-gray-500 animate-pulse'></div>
-                  <div className='w-full h-8 rounded-lg bg-gray-500 animate-pulse'></div>
-                  <div className='w-full h-8 rounded-lg bg-gray-500 animate-pulse'></div>
-                  <div className='w-full h-8 rounded-lg bg-gray-500 animate-pulse'></div>
-                  <div className='w-full h-8 rounded-lg bg-gray-500 animate-pulse'></div>
+                  <div className='w-full h-16 rounded-lg bg-gray-500 animate-pulse'></div>
+                  <div className='w-full h-16 rounded-lg bg-gray-500 animate-pulse'></div>
+                  <div className='w-full h-16 rounded-lg bg-gray-500 animate-pulse'></div>
+                  <div className='w-full h-16 rounded-lg bg-gray-500 animate-pulse'></div>
+                  <div className='w-full h-16 rounded-lg bg-gray-500 animate-pulse'></div>
                 </>
               )}
             </div>
@@ -169,17 +242,15 @@ const Github = ({ datas, data2 }: any) => {
 }
 
 export async function getServerSideProps() {
-  const [dataRes, profileRes] = await Promise.all([
+  const [dataRes] = await Promise.all([
     fetch(
       'https://api.github.com/repos/nurkholiqansori/nurkholiqansori/readme',
     ),
-    fetch(`https://api.github.com/users/nurkholiqansori`),
   ])
 
-  const [data, profile] = await Promise.all([dataRes.json(), profileRes.json()])
+  const [data] = await Promise.all([dataRes.json()])
 
   const datas = JSON.stringify(data)
-  const datas2 = JSON.stringify(profile)
 
   if (!data) {
     return {
@@ -188,7 +259,7 @@ export async function getServerSideProps() {
   }
 
   return {
-    props: { datas, datas2 },
+    props: { datas },
   }
 }
 

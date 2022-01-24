@@ -7,10 +7,10 @@ type Props = {
 
 const Repositories = ({ data1 }: Props) => {
   return (
-    <>
-      {data1.map((i: any) => (
-        <div key={i.id} className='border-2 p-5 rounded-xl'>
-          <div className=' font-medium flex'>
+    <div className='grid gap-2 '>
+      {data1.map((i: any, induk: any) => (
+        <div key={induk} className='border-2 p-5 rounded-xl'>
+          <div className='font-medium flex'>
             {i.name}
             <Link href={i.html_url}>
               <a
@@ -36,9 +36,9 @@ const Repositories = ({ data1 }: Props) => {
               </a>
             </Link>
           </div>
-          <div className='flex flex-wrap gap-2 my-2'>{i.topics.map((i: any) => (
+          <div className='flex flex-wrap gap-2 my-2'>{i.topics.map((i: any, induk: string) => (
             <>
-              <div key={i} className='text-xs py-1 px-2 border-2 border-sky-500 text-sky-500 rounded-full'>{i}</div>
+              <div key={induk} className='text-xs py-1 px-2 border-2 border-sky-500 text-sky-500 rounded-full'>{i}</div>
             </>
           ))}</div>
           <p>{i.description}</p>
@@ -62,7 +62,7 @@ const Repositories = ({ data1 }: Props) => {
           </div>
         </div>
       ))}
-    </>
+    </div>
   )
 }
 

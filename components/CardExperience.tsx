@@ -23,7 +23,7 @@ const CardExperience = (props: Props) => {
                 <Image
                   src={i.logo}
                   placeholder='blur'
-                  blurDataURL='iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAEUlEQVR42mOcuYkBAzAOZUEAxx8M+UokAfQAAAAASUVORK5CYII='
+                  blurDataURL='logo.png'
                   objectFit='cover'
                   width={120}
                   height={120}

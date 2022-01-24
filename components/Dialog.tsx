@@ -137,7 +137,7 @@ const DialogPortofolio = ({
                       className='mt-5'
                       alt={'Documentation of ' + flowData.com}
                       placeholder='blur'
-                      blurDataURL='iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAEUlEQVR42mOcuYkBAzAOZUEAxx8M+UokAfQAAAAASUVORK5CYII='
+                      blurDataURL='logo.png'
                       objectFit='cover'
                       width={400}
                       height={1000}
