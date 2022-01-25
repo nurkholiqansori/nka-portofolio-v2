@@ -9,7 +9,10 @@ const Repositories = ({ data1 }: Props) => {
   return (
     <div className='grid gap-2 '>
       {data1.map((i: any, induk: any) => (
-        <div key={induk} className='border-2 p-5 rounded-xl'>
+        <div
+          key={induk}
+          className='bg-white bg-opacity-80 backdrop-blur-md p-5 rounded-xl'
+        >
           <div className='font-medium flex'>
             {i.name}
             <Link href={i.html_url}>
@@ -36,11 +39,18 @@ const Repositories = ({ data1 }: Props) => {
               </a>
             </Link>
           </div>
-          <div className='flex flex-wrap gap-2 my-2'>{i.topics.map((i: any, induk: string) => (
-            <>
-              <div key={induk} className='text-xs py-1 px-2 border-2 border-sky-500 text-sky-500 rounded-full'>{i}</div>
-            </>
-          ))}</div>
+          <div className='flex flex-wrap gap-2 my-2'>
+            {i.topics.map((i: any, induk: string) => (
+              <>
+                <div
+                  key={induk}
+                  className='text-xs py-1 px-2 border-2 border-sky-500 text-sky-500 rounded-full'
+                >
+                  {i}
+                </div>
+              </>
+            ))}
+          </div>
           <p>{i.description}</p>
           <div className='w-1/3'>
             {i.homepage ? (

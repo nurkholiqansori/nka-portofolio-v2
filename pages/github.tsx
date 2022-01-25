@@ -38,7 +38,7 @@ const Github = ({ datas }: any) => {
           <div className='grid grid-cols-2 mx-5 gap-10 items-start'>
             <div className='grid-cols-span-2 grid justify-end'>
               {dataProfile?.avatar_url ? (
-                <div className='w-40 h-40 rounded-lg overflow-hidden'>
+                <div className='w-40 h-40 rounded-xl overflow-hidden'>
                   <Image
                     placeholder='blur'
                     blurDataURL='logo.png'
@@ -55,7 +55,7 @@ const Github = ({ datas }: any) => {
 
               {/*  */}
             </div>
-            <div className='grid gap-1.5'>
+            <div className='grid gap-1.5 bg-white bg-opacity-80 backdrop-blur-md py-5 px-2 md:p-5 rounded-xl'>
               {dataProfile.html_url ? (
                 <>
                   <div className='flex'>
@@ -205,7 +205,10 @@ const Github = ({ datas }: any) => {
                   <div className='text-xl font-semibold'>Projects</div>
                   <div className='grid gap-2'>
                     {data.project.map((i) => (
-                      <div key={i.id} className='border-2 p-5 rounded-xl'>
+                      <div
+                        key={i.id}
+                        className='p-5 rounded-xl bg-white bg-opacity-80 backdrop-blur-md'
+                      >
                         {' '}
                         <p className=' font-medium'>{i.name}</p>{' '}
                         <div className='flex flex-wrap gap-2 my-2'>

@@ -34,7 +34,7 @@ const Readme = ({ datas }: Props) => {
   }
 
   return (
-    <div className=''>
+    <div className='bg-white bg-opacity-80 backdrop-blur-md rounded-xl p-5'>
       <ReactMarkdown
         remarkPlugins={[remarkHtml]}
         rehypePlugins={[rehypeSanitize]}

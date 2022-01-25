@@ -44,7 +44,7 @@ const MenuNav = ({ show }: Props) => {
         leaveTo='opacity-0'
       >
         <div className='w-screen h-screen bg-sky-900 fixed top-0 overflow-y-scroll z-20 scrollbar scrollbar-thin hover:scrollbar-track-inherit scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-sky-200 scrollbar-track-transparent'>
-          <div className='pl-28 py-28 text-3xl text-sky-50 font-medium md:text-9xl flex flex-col gap-10'>
+          <div className='pl-28 py-28 text-3xl text-sky-50 font-extrabold md:text-9xl flex flex-col gap-10 mt-10'>
             {nav.map((i) => (
               <ListMenuNav key={i.name} link={i.link} title={i.name} />
             ))}

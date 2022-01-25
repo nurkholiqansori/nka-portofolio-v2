@@ -32,8 +32,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [router])
 
   return (
-    <div className='container'>
-      <Component {...pageProps} />
+    <div className='bg-gradient-to-br from-cyan-500 to-fuchsia-500'>
+      <div className='container'>
+        <Component {...pageProps} />
+      </div>
     </div>
   )
 }

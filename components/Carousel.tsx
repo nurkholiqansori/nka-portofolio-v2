@@ -61,28 +61,28 @@ const Carousel = () => {
           number={1}
           img=''
           description='HAYO'
-          link='about'
+          link='/about'
         />
         <ListCarousel
           title='Portofolio'
           number={2}
           img=''
           description='HAYO'
-          link='portofolio'
+          link='/portofolio'
         />
         <ListCarousel
           title='Github'
           number={3}
           img=''
           description='HAYO'
-          link='about'
+          link='/github'
         />
         <ListCarousel
           title='Collection Theme WP'
           number={4}
           img=''
           description='HAYO'
-          link='about'
+          link='/wp-theme'
         />
       </div>
       <button
