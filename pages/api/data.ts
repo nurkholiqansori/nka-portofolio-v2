@@ -293,6 +293,18 @@ export const data = {
       ],
       preview: '',
       startTime: 'Jan 2021',
+    },
+  ],
+  wptheme: [
+    {
+      id: 1,
+      name: 'ANU',
+      img: ''
+    },
+    {
+      id: 2,
+      name: 'HAYO',
+      img: ''
     }
   ]
 }

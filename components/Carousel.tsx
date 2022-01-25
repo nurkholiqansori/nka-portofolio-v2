@@ -60,28 +60,28 @@ const Carousel = () => {
           title='About'
           number={1}
           img=''
-          description='HAYO'
+          description='My curriculum Vitae'
           link='/about'
         />
         <ListCarousel
           title='Portofolio'
           number={2}
           img=''
-          description='HAYO'
+          description='My Portofolio'
           link='/portofolio'
         />
         <ListCarousel
           title='Github'
           number={3}
           img=''
-          description='HAYO'
+          description='My work experience'
           link='/github'
         />
         <ListCarousel
           title='Collection Theme WP'
           number={4}
           img=''
-          description='HAYO'
+          description='Theme Wordpress'
           link='/wp-theme'
         />
       </div>
