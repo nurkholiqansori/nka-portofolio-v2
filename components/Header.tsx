@@ -17,7 +17,7 @@ export const Header = ({title, url}: Props) => {
           url: `https://nurkholiqansori.me${url}`,
           title: `${title} | Nur Kholiq Ansori Profile`,
           description:
-            'My Name is Nur Kholiq Ansori, I\'m a Computer Science who likes Javascript Framework',
+            "My Name is Nur Kholiq Ansori, I'm a Computer Science who likes Javascript Framework",
           images: [
             {
               url: '/logo.png',
@@ -44,6 +44,10 @@ export const Header = ({title, url}: Props) => {
           {
             name: 'application-name',
             content: 'Nur Kholiq Ansori Profile',
+          },
+          {
+            name: 'theme-color',
+            content: '#B6B615',
           },
         ]}
         additionalLinkTags={[

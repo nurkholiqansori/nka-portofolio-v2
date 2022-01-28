@@ -23,5 +23,6 @@
   "homepage_url" : "https://nurkholiqansori.me",
   "start_url": "/",
   "display": "standalone",
+  "background_color" : "#B6B615",
   "theme_color": "#B6B615"
 }
