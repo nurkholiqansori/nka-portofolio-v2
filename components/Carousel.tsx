@@ -28,7 +28,10 @@ const Carousel = () => {
   return (
     <>
       <button
-        className='bg-white bg-opacity-40 backdrop-blur p-3 rounded-full hover: '
+        className={
+          'bg-white bg-opacity-40 backdrop-blur p-3 hidden md:inline rounded-full ' +
+          (num === 1 ? 'hidden' : 'hover:scale-75')
+        }
         onClick={() => (num === 1 ? '' : setNum(num - 1))}
         disabled={num === 1 ? true : false}
       >
@@ -86,7 +89,10 @@ const Carousel = () => {
         />
       </div>
       <button
-        className='bg-white bg-opacity-40 backdrop-blur p-3 rounded-full hover: '
+        className={
+          'bg-white bg-opacity-40 backdrop-blur p-3 hidden md:inline rounded-full ' +
+          (num === 4 ? 'hidden' : 'hover:scale-75')
+        }
         onClick={() => (num === 4 ? '' : setNum(num + 1))}
         disabled={num === 4 ? true : false}
       >
