@@ -15,8 +15,8 @@ const CardExperience = (props: Props) => {
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center justify-center mx-10 gap-3 md:gap-10 text-center relative md:left-1/2 md:-translate-x-1/2 mb-10'>
         {data.experience.map((i, index) => (
           <div key={index}>
-            <div className='bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg'>
-              <p className='text-black font-medium text-lg'>
+            <div className='bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-80 backdrop-blur-md p-3 rounded-lg'>
+              <p className='text-black dark:text-gray-500 font-medium text-lg'>
                 {i.com.length < 16 ? i.com : i.com.slice(0, 16) + '...'}
               </p>
               <div className='w-24 h-24 overflow-hidden mx-auto z-0 rounded-lg my-5'>
@@ -31,7 +31,7 @@ const CardExperience = (props: Props) => {
                   alt={'Documentation ' + i.com}
                 />
               </div>
-              <p className='text-left ml-5 text-black bg-opacity-90 0 flex gap-2 items-center'>
+              <p className='text-left ml-5 text-black dark:text-gray-500 bg-opacity-90 0 flex gap-2 items-center'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   className='h-5 w-5'
@@ -48,7 +48,7 @@ const CardExperience = (props: Props) => {
                 </svg>{' '}
                 {i.date}
               </p>
-              <p className='text-left ml-5 text-black bg-opacity-90 flex gap-2 items-center'>
+              <p className='text-left ml-5 text-black dark:text-gray-500 bg-opacity-90 flex gap-2 items-center'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   className='h-5 w-5'
@@ -74,7 +74,7 @@ const CardExperience = (props: Props) => {
                     setDataState(index)
                     setNotInfo(true)
                   }}
-                  className='p-2 text-sm font-medium text-white bg-black rounded-md bg-opacity-20 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 mx-auto'
+                  className='p-2 text-sm font-medium text-white bg-black rounded-md bg-opacity-20 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 mx-auto hover:scale-75'
                 >
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -98,7 +98,7 @@ const CardExperience = (props: Props) => {
                     setDataState(index)
                     setNotInfo(false)
                   }}
-                  className='p-2 text-sm font-medium text-white bg-black rounded-md bg-opacity-20 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 mx-auto'
+                  className='p-2 text-sm font-medium text-white bg-black rounded-md bg-opacity-20 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 mx-auto hover:scale-75'
                 >
                   <svg
                     xmlns='http://www.w3.org/2000/svg'

@@ -55,7 +55,7 @@ const Github = ({ datas }: any) => {
 
               {/*  */}
             </div>
-            <div className='grid gap-1.5 bg-white bg-opacity-80 backdrop-blur-md py-5 px-2 md:p-5 rounded-xl'>
+            <div className='grid gap-1.5 bg-white dark:bg-black dark:bg-opacity-50 dark:text-gray-500 bg-opacity-80 backdrop-blur-md py-5 px-2 md:p-5 rounded-xl'>
               {dataProfile.html_url ? (
                 <>
                   <div className='flex'>
@@ -207,7 +207,7 @@ const Github = ({ datas }: any) => {
                     {data.project.map((i) => (
                       <div
                         key={i.id}
-                        className='p-5 rounded-xl bg-white bg-opacity-80 backdrop-blur-md'
+                        className='p-5 rounded-xl bg-white bg-opacity-80 dark:bg-black dark:bg-opacity-80 dark:text-gray-500 backdrop-blur-md'
                       >
                         {' '}
                         <p className=' font-medium'>{i.name}</p>{' '}

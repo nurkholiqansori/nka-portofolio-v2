@@ -7,9 +7,9 @@ export const Nav = () => {
 
   return (
     <>
-      <div className='top-0 left-1/2 -translate-x-1/2 bg-white dark:bg-black bg-opacity-40 backdrop-blur w-28 h-16 rounded-b-full flex justify-center items-center z-30 absolute cursor-pointer hover:scale-95'>
+      <div className='top-5 right-5 bg-white dark:bg-black bg-opacity-40 backdrop-blur rounded-full p-3 flex justify-center items-center z-30 absolute cursor-pointer hover:scale-95'>
         <div
-          className='text-white hover:animate-bounce'
+          className='text-white '
           onClick={() => setShow(!show)}
         >
           {show ? (
@@ -24,7 +24,7 @@ export const Nav = () => {
                 strokeLinecap='round'
                 strokeLinejoin='round'
                 strokeWidth={2}
-                d='M5 15l7-7 7 7'
+                d='M6 18L18 6M6 6l12 12'
               />
             </svg>
           ) : (
@@ -39,7 +39,7 @@ export const Nav = () => {
                 strokeLinecap='round'
                 strokeLinejoin='round'
                 strokeWidth={2}
-                d='M19 9l-7 7-7-7'
+                d='M4 6h16M4 12h16m-7 6h7'
               />
             </svg>
           )}

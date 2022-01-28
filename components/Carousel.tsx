@@ -4,26 +4,6 @@ import ListCarousel from './ListCarousel'
 
 const Carousel = () => {
   const [num, setNum] = useState(1)
-  // const router = useRouter()
-  
-  // const nextSlide = () => {
-  //   setNum(num + 1)
-  // }
-  // const resetSlide = () => {
-  //   setNum(1)
-  // }
-
-  // if (num === 1) {
-  //   setTimeout(nextSlide, 3000)
-  // } else if (num === 4) {
-  //   setTimeout(resetSlide, 3000)
-  // } else {
-  //   setTimeout(nextSlide, 3000)
-  // }
-
-  // useEffect(() => {
-  //   router.push('/#' + num)
-  // }, [num])
 
   return (
     <>
@@ -58,7 +38,7 @@ const Carousel = () => {
           </svg>
         </a>
       </button>
-      <div className='grid grid-flow-col gap-10 mx-5 overflow-x-scroll overflow-y-hidden scrollbar-thin scrollbar-thumb-sky-600 hover:scrollbar-thumb-sky-400 scrollbar-track-sky-100 pl-10 py-5 snap-x w-full scroll-smooth'>
+      <div className='grid grid-flow-col gap-10 mx-5 overflow-x-scroll overflow-y-hidden scrollbar-thin scrollbar-thumb-sky-600 hover:scrollbar-thumb-sky-400 scrollbar-track-sky-100 dark:scrollbar-track-gray-500 pl-10 py-5 snap-x w-full scroll-smooth'>
         <ListCarousel
           title='About'
           number={1}

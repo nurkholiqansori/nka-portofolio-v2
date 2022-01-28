@@ -16,10 +16,13 @@ const ListCarousel = ({ title, number, img, description, link }: Props) => {
       id={`${number}`}
     >
       <div className='mt-28'></div>
-      <div className='text-sm text-white'>{description}</div>
+      <div className='text-sm text-white dark:text-gray-100'>{description}</div>
       <div>
         <Link href={link}>
-          <a title={title} className='hover:text-white text-lg'>
+          <a
+            title={title}
+            className='hover:text-white dark:hover:text-sky-200 text-lg'
+          >
             {title} &#8641;
           </a>
         </Link>

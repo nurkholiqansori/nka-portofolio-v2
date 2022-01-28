@@ -42,7 +42,7 @@ const DialogPortofolio = ({
         className='fixed inset-0 z-10 overflow-y-auto'
         onClose={closeModal}
       >
-        <div className='min-h-screen px-4 text-center bg-white bg-opacity-40 backdrop-blur-sm'>
+        <div className='min-h-screen px-4 text-center bg-white dark:bg-black dark:bg-opacity-40 bg-opacity-40 backdrop-blur-sm'>
           <Transition.Child
             as={Fragment}
             enter='ease-out duration-300'
@@ -70,10 +70,10 @@ const DialogPortofolio = ({
             leaveFrom='opacity-100 scale-100'
             leaveTo='opacity-0 scale-95'
           >
-            <div className='inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl'>
+            <div className='inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white dark:bg-black shadow-xl rounded-2xl'>
               <Dialog.Title
                 as='h3'
-                className='text-lg font-medium leading-6 text-gray-900'
+                className='text-lg font-medium leading-6 text-gray-900 dark:text-gray-500'
               >
                 {info ? flowData.title : flowData.com}
               </Dialog.Title>
@@ -86,7 +86,7 @@ const DialogPortofolio = ({
                     Website : {flowData.address}{' '}
                     <Link href={flowData.address}>
                       <a
-                        className='hover:text-black'
+                        className='hover:text-black dark:hover:text-gray-300'
                         title={flowData.com}
                         target='_blank'
                         rel='noopener noreferrer'
@@ -117,7 +117,7 @@ const DialogPortofolio = ({
                     {' '}
                     Develop on {flowData.date}
                   </p>
-                  <div className='text-sm text-gray-500 flex'>
+                  <div className='text-sm text-gray-500 flex dark:fill-white'>
                     Build with{' '}
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
@@ -151,7 +151,7 @@ const DialogPortofolio = ({
               <div className='mt-4 grid grid-cols-2 gap-5'>
                 <button
                   type='button'
-                  className='px-4 py-2 text-sm font-medium text-sky-900 bg-sky-100 border border-transparent rounded-md hover:bg-sky-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-sky-500'
+                  className='px-4 py-2 text-sm font-medium text-sky-900 bg-sky-100 dark:bg-gray-700 dark:text-gray-300 hover:scale-75 border border-transparent rounded-md hover:bg-sky-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-sky-500'
                   onClick={closeModal}
                 >
                   Close
@@ -168,7 +168,7 @@ const DialogPortofolio = ({
                     >
                       <button
                         type='button'
-                        className='w-full inline-flex justify-center px-4 py-2 text-sm font-medium text-sky-900 bg-sky-100 border border-transparent rounded-md hover:bg-sky-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-sky-500'
+                        className='w-full inline-flex justify-center px-4 py-2 text-sm font-medium text-sky-900 bg-sky-100 dark:bg-gray-700 dark:text-gray-300 hover:scale-75 border border-transparent rounded-md hover:bg-sky-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-sky-500'
                       >
                         Full View
                       </button>

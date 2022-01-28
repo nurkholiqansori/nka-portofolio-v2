@@ -11,7 +11,7 @@ const Repositories = ({ data1 }: Props) => {
       {data1.map((i: any, induk: any) => (
         <div
           key={induk}
-          className='bg-white bg-opacity-80 backdrop-blur-md p-5 rounded-xl'
+          className='bg-white bg-opacity-80 dark:bg-black dark:bg-opacity-80 dark:text-gray-500 backdrop-blur-md p-5 rounded-xl'
         >
           <div className='font-medium flex'>
             {i.name}
