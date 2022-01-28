@@ -6,7 +6,7 @@ export const Nav = () => {
 
   return (
     <>
-      <div className='top-0 left-1/2 -translate-x-1/2 bg-sky-800 backdrop-blur-md bg-opacity-70 w-28 h-16 rounded-b-full flex justify-center items-center z-30 absolute cursor-pointer'>
+      <div className='top-0 left-1/2 -translate-x-1/2 bg-white bg-opacity-40 backdrop-blur w-28 h-16 rounded-b-full flex justify-center items-center z-30 absolute cursor-pointer'>
         <div
           className='text-white animate-bounce'
           onClick={() => setShow(!show)}
