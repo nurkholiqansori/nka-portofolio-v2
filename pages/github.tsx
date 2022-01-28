@@ -36,7 +36,7 @@ const Github = ({ datas }: any) => {
       <Body>
         <div className='w-full md:m-10 mb-20'>
           <div className='grid grid-cols-2 mx-5 gap-10 items-start'>
-            <div className='grid-cols-span-2 grid justify-end'>
+            <div className='col-span-2 md:col-span-1 md:justify-end grid justify-center'>
               {dataProfile?.avatar_url ? (
                 <div className='w-40 h-40 rounded-xl overflow-hidden'>
                   <Image
@@ -55,7 +55,7 @@ const Github = ({ datas }: any) => {
 
               {/*  */}
             </div>
-            <div className='grid gap-1.5 bg-white dark:bg-black dark:bg-opacity-50 dark:text-gray-500 bg-opacity-80 backdrop-blur-md py-5 px-2 md:p-5 rounded-xl'>
+            <div className='grid gap-1.5 col-span-2 md:col-span-1 bg-white dark:bg-black dark:bg-opacity-50 dark:text-gray-500 bg-opacity-80 backdrop-blur-md py-5 px-2 md:p-5 rounded-xl'>
               {dataProfile.html_url ? (
                 <>
                   <div className='flex'>

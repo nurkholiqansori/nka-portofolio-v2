@@ -1,8 +1,11 @@
 {
+  "manifest_version": 3,
+  "version": "2",
+  "default_locale": "en",
   "author": "Nur Kholiq Ansori",
   "short_name": "NKA Profile",
   "name": "Nur Kholiq Ansori Profile",
-  "description" : "My Name is Nur Kholiq Ansori, I'm a Computer Science who likes Javascript Framework",
+  "description": "My Name is Nur Kholiq Ansori, I'm a Computer Science who likes Javascript Framework",
   "icons": [
     {
       "src": "/logo.png",
@@ -20,9 +23,9 @@
       "sizes": "512x512"
     }
   ],
-  "homepage_url" : "https://nurkholiqansori.me",
+  "homepage_url": "https://nurkholiqansori.me",
   "start_url": "/",
   "display": "standalone",
-  "background_color" : "#B6B615",
+  "background_color": "#B6B615",
   "theme_color": "#B6B615"
 }
