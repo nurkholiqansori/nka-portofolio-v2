@@ -8,7 +8,7 @@ const DarkMode = () => {
     <div>
       {theme === 'light' ? (
         <button
-          className='absolute top-5 left-5 bg-white text-white bg-opacity-50 backdrop-blur-md p-3 rounded-full'
+          className='absolute top-5 left-5 bg-white text-white bg-opacity-50 backdrop-blur-md p-3 rounded-full hover:scale-95'
           onClick={() =>
             theme === 'light' ? setTheme('dark') : setTheme('light')
           }
@@ -30,7 +30,7 @@ const DarkMode = () => {
         </button>
       ) : (
         <button
-          className='absolute top-5 left-5 bg-white dark:text-black bg-opacity-50 backdrop-blur-md p-3 rounded-full'
+          className='absolute top-5 left-5 bg-white dark:text-black bg-opacity-50 backdrop-blur-md p-3 rounded-full hover:scale-95'
           onClick={() =>
             theme === 'light' ? setTheme('dark') : setTheme('light')
           }
