@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import DarkMode from './DarkMode'
 import MenuNav from './MenuNav'
 
 export const Nav = () => {
@@ -6,9 +7,9 @@ export const Nav = () => {
 
   return (
     <>
-      <div className='top-0 left-1/2 -translate-x-1/2 bg-white bg-opacity-40 backdrop-blur w-28 h-16 rounded-b-full flex justify-center items-center z-30 absolute cursor-pointer hover:scale-95'>
+      <div className='top-0 left-1/2 -translate-x-1/2 bg-white dark:bg-black bg-opacity-40 backdrop-blur w-28 h-16 rounded-b-full flex justify-center items-center z-30 absolute cursor-pointer hover:scale-95'>
         <div
-          className='text-white animate-bounce'
+          className='text-white hover:animate-bounce'
           onClick={() => setShow(!show)}
         >
           {show ? (
@@ -45,6 +46,7 @@ export const Nav = () => {
         </div>
       </div>
       <MenuNav show={show} />
+      <DarkMode />
     </>
   )
 }

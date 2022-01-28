@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import NProgress from 'nprogress'
 import '../styles/NProgress.css'
+import { ThemeProvider } from 'next-themes'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -32,11 +33,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [router])
 
   return (
-    <div className='bg-gradient-to-br from-cyan-500 to-fuchsia-500'>
-      <div className='container'>
-        <Component {...pageProps} />
+    <ThemeProvider attribute='class'>
+      <div className='bg-gradient-to-br from-cyan-500 to-fuchsia-500 dark:from-gray-800 dark:to-black'>
+        <div className='container'>
+          <Component {...pageProps} />
+        </div>
       </div>
-    </div>
+    </ThemeProvider>
   )
 }
 

@@ -43,13 +43,13 @@ const MenuNav = ({ show }: Props) => {
         leaveFrom='opacity-100'
         leaveTo='opacity-0'
       >
-        <div className='w-screen h-screen bg-white bg-opacity-50 backdrop-blur-md fixed top-0 overflow-y-scroll z-20 scrollbar scrollbar-thin hover:scrollbar-track-inherit scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-sky-200 scrollbar-track-transparent'>
-          <div className='pl-28 py-28 text-3xl text-sky-900 font-extrabold md:text-9xl flex flex-col gap-10 mt-10'>
+        <div className='w-screen h-screen bg-white dark:bg-black dark:bg-opacity-50 bg-opacity-50 backdrop-blur-md fixed top-0 overflow-y-scroll z-20 scrollbar scrollbar-thin hover:scrollbar-track-inherit scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-sky-200 scrollbar-track-transparent'>
+          <div className='pl-28 py-28 text-3xl text-sky-900 dark:text-gray-300 font-extrabold md:text-9xl flex flex-col gap-10 mt-10'>
             {nav.map((i) => (
               <ListMenuNav key={i.name} link={i.link} title={i.name} />
             ))}
           </div>
-          <div className='text-sky-900 text-opacity-60 text-3xl md:text-9xl font-extrabold absolute bottom-1/2 md:bottom-0 right-0 md:-right-32 -rotate-90 -z-[1]'>
+          <div className='text-sky-900 dark:text-gray-500 text-opacity-60 text-3xl md:text-9xl font-extrabold absolute bottom-1/2 md:bottom-0 right-0 md:-right-32 -rotate-90 -z-[1]'>
             My Profile
           </div>
         </div>
