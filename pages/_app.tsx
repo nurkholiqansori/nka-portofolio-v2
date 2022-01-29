@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute='class'>
       <div className='bg-gradient-to-br from-cyan-500 to-fuchsia-500 dark:from-gray-800 dark:to-black'>
-        <div className='container'>
+        <div className='container mx-auto'>
           <Component {...pageProps} />
         </div>
       </div>

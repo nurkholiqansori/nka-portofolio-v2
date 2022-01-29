@@ -12,7 +12,7 @@ const CardExperience = (props: Props) => {
 
   return (
     <>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center justify-center mx-10 gap-3 md:gap-10 text-center relative md:left-1/2 md:-translate-x-1/2 mb-10'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-10 gap-3 md:gap-10 text-center mb-10'>
         {data.experience.map((i, index) => (
           <div key={index}>
             <div className='bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-80 backdrop-blur-md p-3 rounded-lg'>

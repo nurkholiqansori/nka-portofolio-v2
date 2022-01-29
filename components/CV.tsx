@@ -8,10 +8,15 @@ import Timeline from './Timeline'
 const CV: React.FunctionComponent<any> = (props) => {
   return (
     <>
-      <div className='w-96 md:w-1/2 mx-auto mb-10 border-2 rounded-lg overflow-hidden'>
+      <div className='mx-auto mb-10 rounded-lg overflow-hidden'>
         <div className='grid md:grid-flow-col gap-5 items-center p-10 border-b-2 bg-sky-800'>
           <div className='w-24 h-24 rounded-full overflow-hidden mx-auto z-0'>
-            <Image src={myPic} placeholder='blur' objectFit='cover' alt='My Picture' />
+            <Image
+              src={myPic}
+              placeholder='blur'
+              objectFit='cover'
+              alt='My Picture'
+            />
           </div>
           <div className='grid items-center gap-3'>
             <div className='text-3xl font-semibold text-sky-50 text-opacity-80'>
@@ -63,17 +68,17 @@ const CV: React.FunctionComponent<any> = (props) => {
               {data.contact.map((i) => (
                 <div
                   key={i.id}
-                  className={`bg-[#${i.color}] p-2 m-2 w-10 h-10 flex justify-center items-center rounded-full hover:scale-95 cursor-pointer overflow-hidden mx-auto text-white`}
+                  className={`bg-[#${i.color}] p-2 m-2 w-10 h-10 flex justify-center items-center rounded-full hover:scale-95 cursor-pointer overflow-hidden mx-auto text-gray-500`}
                 >
                   <Link href={i.link}>
                     <a title={i.name} target='_blank' rel='noopener noreferrer'>
                       <div>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
-                          className='h-6 w-6'
+                          className='h-6 w-6 fill-gray-300'
                           viewBox='0 0 24 24'
-                          fill='none'
                           stroke='currentColor'
+                          fill='none'
                           role='img'
                         >
                           <path
@@ -91,16 +96,15 @@ const CV: React.FunctionComponent<any> = (props) => {
               {data.socMed.map((i) => (
                 <div
                   key={i.id}
-                  className={`bg-[#${i.color}] p-2 m-2 w-10 h-10 flex justify-center items-center rounded-full hover:scale-95 cursor-pointer overflow-hidden mx-auto text-white`}
+                  className={`bg-[#${i.color}] p-2 m-2 w-10 h-10 flex justify-center items-center rounded-full hover:scale-95 cursor-pointer overflow-hidden mx-auto `}
                 >
                   <Link href={i.link}>
                     <a title={i.name} target='_blank' rel='noopener noreferrer'>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
-                        className='h-6 w-6'
+                        className='h-6 w-6 fill-gray-300'
                         viewBox='0 0 24 24'
                         fill='none'
-                        stroke='currentColor'
                         role='img'
                       >
                         <path
