@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react'
 import Body from '../components/Body'
 import { Header } from '../components/Header'
 import { Nav } from '../components/Nav'
-import logo from '../public/logo.png'
 import Link from 'next/link'
 import Readme from '../components/Readme'
 import Repositories from '../components/Repositories'
@@ -12,8 +11,8 @@ import { data } from './api/data'
 
 const Github = ({ datas }: any) => {
   const router = useRouter()
-  const [data1, setData1] = useState<any[]>([])
-  const [dataProfile, setDataProfile] = useState<any[any]>([])
+  const [data1, setData1] = useState<string[]>([])
+  const [dataProfile, setDataProfile] = useState<any[string]>([])
 
   useEffect(() => {
     fetch('https://api.github.com/users/nurkholiqansori/repos')
@@ -34,7 +33,7 @@ const Github = ({ datas }: any) => {
       <Header title='Portofolio' url={`${router.asPath}`} />
       <Nav />
       <Body>
-        <div className='w-full md:m-10 mb-20'>
+        <div className='w-full mb-20'>
           <div className='grid grid-cols-2 mx-5 gap-10 items-start'>
             <div className='col-span-2 md:col-span-1 md:justify-end grid justify-center'>
               {dataProfile?.avatar_url ? (
