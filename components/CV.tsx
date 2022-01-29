@@ -10,7 +10,7 @@ const CV: React.FunctionComponent<any> = (props) => {
     <>
       <div className='mx-auto mb-10'>
         <div className='mx-5 overflow-hidden'>
-          <div className='grid md:grid-flow-col gap-5 items-center p-10 bg-white bg-opacity-30 backdrop-blur mb-5 rounded-lg'>
+          <div className='grid md:grid-flow-col gap-5 items-center p-10 bg-white bg-opacity-20 backdrop-blur mb-5 rounded-lg'>
             <div className='w-32 h-32 rounded-lg overflow-hidden mx-auto z-0'>
               <Image
                 src={myPic}
@@ -20,10 +20,10 @@ const CV: React.FunctionComponent<any> = (props) => {
               />
             </div>
             <div className='grid items-center gap-3'>
-              <div className='text-3xl font-bold text-gray-800 dark:text-gray-300 text-opacity-80 text-center md:text-left'>
+              <div className='text-3xl font-bold text-white dark:text-gray-300 text-opacity-80 text-center md:text-left'>
                 {data.myName}
               </div>
-              <div className='flex items-center gap-2 text-black dark:text-gray-300 text-opacity-70'>
+              <div className='flex items-center gap-2 text-white dark:text-gray-300 text-opacity-70'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   className='h-5 w-5'
@@ -40,7 +40,7 @@ const CV: React.FunctionComponent<any> = (props) => {
                 </svg>
                 {data.birthPlace}
               </div>
-              <div className='flex items-center justify-center md:justify-start gap-2 text-black text-opacity-70 dark:text-gray-300'>
+              <div className='flex items-center justify-center md:justify-start gap-2 text-white text-opacity-70 dark:text-gray-300'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   className='h-5 w-5'
@@ -80,7 +80,7 @@ const CV: React.FunctionComponent<any> = (props) => {
                         <div>
                           <svg
                             xmlns='http://www.w3.org/2000/svg'
-                            className='h-6 w-6 fill-gray-700 dark:fill-gray-300'
+                            className='h-6 w-6 fill-white dark:fill-gray-300'
                             viewBox='0 0 24 24'
                             stroke='currentColor'
                             fill='none'
@@ -111,7 +111,7 @@ const CV: React.FunctionComponent<any> = (props) => {
                       >
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
-                          className='h-6 w-6 fill-gray-800 dark:fill-gray-300'
+                          className='h-6 w-6 fill-white dark:fill-gray-300'
                           viewBox='0 0 24 24'
                           fill='none'
                           role='img'
@@ -130,10 +130,10 @@ const CV: React.FunctionComponent<any> = (props) => {
               </div>
             </div>
           </div>
-          <div className='p-10 mb-5 text-center bg-white bg-opacity-30 rounded-lg text-black dark:text-gray-300'>
+          <div className='p-10 mb-5 text-center bg-white bg-opacity-20 rounded-lg text-white dark:text-gray-300'>
             {data.description}
           </div>
-          <div className='p-10 bg-white bg-opacity-30 rounded-lg'>
+          <div className='p-10 bg-white bg-opacity-20 rounded-lg'>
             <Timeline />
           </div>
         </div>

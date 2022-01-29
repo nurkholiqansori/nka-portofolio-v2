@@ -13,7 +13,7 @@ const Timeline = (props: Props) => {
             <div className='flex items-center justify-center w-10 h-10 border rounded-full'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='h-6 w-6 text-black dark:text-gray-300'
+                className='h-6 w-6 text-white dark:text-gray-300'
                 fill='none'
                 viewBox='0 0 24 24'
                 stroke='currentColor'
@@ -32,10 +32,10 @@ const Timeline = (props: Props) => {
           <div className='w-px h-full bg-gray-300'></div>
         </div>
         <div className='pb-8 '>
-          <p className='mb-2 text-xl font-bold text-black dark:text-gray-300'>
+          <p className='mb-2 text-xl font-bold text-white dark:text-gray-300'>
             Education
           </p>
-          <div className='text-gray-800 dark:text-gray-300'>
+          <div className='text-white dark:text-gray-300'>
             {data.study.map((i) => (
               <div key={i.id}>
                 <p>
@@ -53,7 +53,7 @@ const Timeline = (props: Props) => {
             <div className='flex items-center justify-center w-10 h-10 border rounded-full'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='w-6 h-6 text-black dark:text-gray-300'
+                className='w-6 h-6 text-white dark:text-gray-300'
                 fill='none'
                 viewBox='0 0 24 24'
                 stroke='currentColor'
@@ -69,10 +69,10 @@ const Timeline = (props: Props) => {
           </div>
         </div>
         <div className='pt-1'>
-          <p className='mb-2 text-lg font-bold text-black dark:text-gray-300'>
-            Skill
+          <p className='mb-2 text-lg font-bold text-white dark:text-gray-300'>
+            Courses
           </p>
-          <div className='text-gray-800 dark:text-gray-300 grid gap-5 ml-1 md:grid-cols-3 xl:grid-cols-4'>
+          <div className='text-white dark:text-gray-300 grid gap-5 ml-1 md:grid-cols-3 xl:grid-cols-4'>
             {data.skill.map((i) => (
               <div className='' key={i.id}>
                 <Link href={i.credential}>
@@ -85,6 +85,7 @@ const Timeline = (props: Props) => {
                     <p className='font-medium'>{i.title}</p>
                   </a>
                 </Link>
+                <p className=''>@ {i.company}</p>
                 <p className=''>Published from {i.date}</p>
               </div>
             ))}
