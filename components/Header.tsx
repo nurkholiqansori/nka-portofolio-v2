@@ -3,7 +3,7 @@ import { NextSeo, SocialProfileJsonLd } from 'next-seo'
 
 interface Props {
   title: string,
-  url: any
+  url: string
 }
 
 export const Header = ({title, url}: Props) => {
@@ -47,7 +47,7 @@ export const Header = ({title, url}: Props) => {
           },
           {
             name: 'theme-color',
-            content: '#B6B615',
+            content: '#000000',
           },
         ]}
         additionalLinkTags={[
