@@ -69,7 +69,7 @@ const CV: React.FunctionComponent<any> = (props) => {
                 {data.contact.map((i) => (
                   <div
                     key={i.id}
-                    className={`bg-[#${i.color}] p-2 m-2 w-10 h-10 flex justify-center items-center rounded-full hover:scale-95 cursor-pointer overflow-hidden mx-auto text-gray-500`}
+                    className={`bg-[#${i.color}] p-2 m-2 w-10 h-10 flex justify-center items-center rounded-full hover:scale-95 cursor-pointer overflow-hidden mx-auto text-white`}
                   >
                     <Link href={i.link}>
                       <a
@@ -80,7 +80,7 @@ const CV: React.FunctionComponent<any> = (props) => {
                         <div>
                           <svg
                             xmlns='http://www.w3.org/2000/svg'
-                            className='h-6 w-6 fill-white dark:fill-gray-300'
+                            className='h-6 w-6'
                             viewBox='0 0 24 24'
                             stroke='currentColor'
                             fill='none'
