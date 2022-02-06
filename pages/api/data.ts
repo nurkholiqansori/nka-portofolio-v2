@@ -58,7 +58,7 @@ export const data = {
       com: 'Jasa Pembuatan Website Bekasi',
       date: 'Jan 2022',
       status: 'Partime',
-      address: 'https://www.karuniakitchensetbekasi.com/',
+      address: 'https://www.jasapembuatanwebsitebekasi.net/',
       logo: '/doc/Logo/jasapembuatanwebsitebekasi.png',
       img: '/doc/jasapembuatanwebsitebekasi..png',
       build: 'wordpress',
