@@ -133,8 +133,8 @@ export const data = {
   study: [
     {
       id: 1,
-      title: 'S1 Teknik Informatika',
-      sch: 'Universitas Mitra Karya Bekasi',
+      title: 'Bachelor Degree of Computer Science',
+      sch: 'Mitra Karya University',
       date: 'Aug 2019 until Present',
     },
     {
@@ -174,7 +174,7 @@ export const data = {
       title: 'Responsive Web Design Course',
       company: 'Sololearn',
       credential: 'https://www.sololearn.com/Certificate/1162-3200321/jpg/',
-      date: 'Agu 2021',
+      date: 'Aug 2021',
       img: '',
     },
     {
