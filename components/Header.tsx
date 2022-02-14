@@ -49,6 +49,10 @@ export const Header = ({title, url}: Props) => {
             name: 'theme-color',
             content: '#000000',
           },
+          {
+            name: 'google-site-verification',
+            content: 'LDQrI76atKuVJOouskURaOJiGk6tBm6aNAzLaFn05iI',
+          },
         ]}
         additionalLinkTags={[
           {

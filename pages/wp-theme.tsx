@@ -107,6 +107,7 @@ const Collections: NextPage = (props: Props) => {
                         <a
                           target='_blank'
                           rel='noreferrer noopener'
+                          title={'Theme ' + i.name}
                           href={i.url}
                           className='bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-500 hover:bg-gray-500 hover:text-white rounded-full px-6 py-2 text-xs'
                         >
