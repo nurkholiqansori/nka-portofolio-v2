@@ -311,13 +311,66 @@ export const data = {
   wptheme: [
     {
       id: 1,
-      name: 'ANU',
-      img: ''
+      name: 'Abasha',
+      creator: 'Nile-Theme',
+      category: [
+        {
+          id: 1,
+          name: 'Education'
+        },
+        {
+          id: 2,
+          name: 'Learning'
+        },
+        {
+          id: 3,
+          name: 'Courses'
+        },
+      ],
+      img: 'wptheme/\abasha/\index.jpg',
+      url: 'https:/\/\elements.envato.com/\abasha-education-learning-courses-elementor-templa-MZZJRMN',
     },
     {
       id: 2,
-      name: 'HAYO',
-      img: ''
+      name: 'Adama',
+      creator: 'Rabonadev',
+      category: [
+        {
+          id: 1,
+          name: 'Agency'
+        },
+        {
+          id: 2,
+          name: 'Portfolio'
+        },
+        {
+          id: 3,
+          name: 'Cv'
+        },
+      ],
+      img: 'wptheme/\adama/\index.png',
+      url: 'https:/\/\elements.envato.com/\adama-personal-portfolio-resume-elementor-template-JBLGGP8'
+    },
+    {
+      id: 3,
+      name: 'Adhis',
+      creator: 'Vultype',
+      category: [
+        {
+          id: 1,
+          name: 'Architecture'
+        },
+        {
+          id: 2,
+          name: 'Construction'
+        },
+        {
+          id: 3,
+          name: 'Industry'
+        },
+      ],
+      img: 'wptheme/\adhis/\index.jpg',
+      url: 'https://elements.envato.com/adhis-construction-elementor-template-kit-B54SWDA'
     }
   ]
 }

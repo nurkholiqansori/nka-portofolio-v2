@@ -16,50 +16,108 @@ const Collections: NextPage = (props: Props) => {
       <Header title='Portofolio' url={`${router.asPath}`} />
       <Nav />
       <Body>
-        <div className='w-full m-5 md:m-10 mb-20 grid justify-center'>
+        <div className='w-full mb-20 grid justify-center'>
           <div>
             <div className='flex justify-center'>
-              <label className='block'>
-                <input
-                  type='text'
-                  className='
-                    mt-0
-                    block
-                    w-full
-                    px-0.5
-                    bg-transparent
-                    border-0 border-b-2 border-sky-200
-                    focus:ring-0 focus:border-sky-50
-                    t transition-all delay-75
-                    text-white placeholder:text-white placeholder:text-opacity-80
-                  '
-                  placeholder='Search The Theme'
-                />
-              </label>
-              <div className='text-white p-2 rounded-full cursor-pointer hover:bg-sky-800 transition-all'>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  className='h-6 w-6'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth={2}
-                    d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'
-                  />
-                </svg>
+              <div className='inset-x-auto w-full z-10'>
+                <div className='max-w-xl mx-auto shadow-md rounded-md p-4 bg-white bg-opacity-30 backdrop-blur-sm'>
+                  <div className='flex gap-2 flex-col md:flex-row center my-10'>
+                    <div className='relative flex-1'>
+                      <input
+                        id='departure'
+                        name='departure'
+                        type='text'
+                        className='peer h-10 w-full border border-1.5 rounded-md border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-sky-500 focus:border-2 p-3'
+                        placeholder='Search'
+                      />
+                      <label className='absolute left-2 px-1 -top-2.5 bg-white rounded-full text-sky-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-900 peer-placeholder-shown:top-2 peer-focus:-top-2.5 peer-focus:text-sky-600 peer-focus:text-sm'>
+                        Search
+                      </label>
+                      <div className='absolute right-0 top-0 mt-2 mr-2'>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          className='h-6 w-6'
+                          fill='none'
+                          viewBox='0 0 24 24'
+                          stroke='currentColor'
+                        >
+                          <path
+                            stroke-linecap='round'
+                            stroke-linejoin='round'
+                            stroke-width='1'
+                            d='M6 18L18 6M6 6l12 12'
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='flex justify-center mt-6'>
+                    <button className='bg-sky-500 hover:bg-sky-700 text-white font-extrabold text-lg rounded-full px-6 py-3'>
+                      Search
+                    </button>
+                  </div>
+                  <div className='text-gray-900 dark:text-gray-200 text-center my-5 after:content-divider'>
+                    or select the category
+                  </div>
+                </div>
               </div>
             </div>
-            <div className='text-white text-center my-5 after:content-divider'>
-              or select the category
-            </div>
-            <div className='grid grid-flow-col'>
+            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-10 gap-16'>
               {data.wptheme.map((i) => (
-                <div key={i.id} className='mx-auto py-2 px-2 text-white rounded-full text-xs max-w-2xl overflow-y-auto cursor-pointer bg-sky-700 hover:bg-sky-300'>
-                  {i.name}
+                <div
+                  className='mx-auto px-0 md:px-4 py-4 w-80 max-w-lg max-h-60'
+                  key={i.id}
+                >
+                  <div className='bg-gray-50 dark:bg-gray-700 md:bg-white md:shadow-xl rounded-lg mb-6 '>
+                    <div className='md:flex-shrink-0 h-32'>
+                      <img
+                        src={i.img}
+                        alt={i.name}
+                        className='object-cover object-top h-full w-full rounded-lg rounded-b-none'
+                      />
+                    </div>
+
+                    <div className='py-1'>
+                      <div className='p-4'>
+                        <h2 className='truncate font-bold mb-2 text-2xl text-gray-800 dark:text-gray-400 tracking-normal'>
+                          {i.name}
+                        </h2>
+
+                        {i.category[0].name ? (
+                          <div className='break-words text-sm text-gray-700 dark:text-gray-400 mx-2 mr-1 flex gap-1 flex-wrap'>
+                            {i.category.map((item) => (
+                              <span
+                                key={item.id}
+                                className='px-2 py-1 border border-gray-500 rounded-full text-xs'
+                              >
+                                {item.name}
+                              </span>
+                            ))}
+                          </div>
+                        ) : (
+                          ''
+                        )}
+                      </div>
+
+                      <div className='flex items-center justify-between mx-3 md:mx-0 p-2 md:p-4 '>
+                        <div className='flex items-center'>
+                          <div className='text-sm'>
+                            <p className='text-black dark:text-gray-400 leading-none'>
+                              By {i.creator}
+                            </p>
+                          </div>
+                        </div>
+                        <a
+                          target='_blank'
+                          rel='noreferrer noopener'
+                          href={i.url}
+                          className='bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-500 hover:bg-gray-500 hover:text-white rounded-full px-6 py-2 text-xs'
+                        >
+                          Preview
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
