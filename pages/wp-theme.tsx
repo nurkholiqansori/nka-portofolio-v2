@@ -18,10 +18,10 @@ const Collections: NextPage = (props: Props) => {
       <Body>
         <div className='w-full mb-20 grid justify-center'>
           <div>
-            <div className='flex justify-center'>
-              <div className='inset-x-auto w-full z-10'>
+            <div className=''>
+              <div className='inset-x-auto w-full'>
                 <div className='max-w-xl mx-auto shadow-md rounded-md p-4 bg-white bg-opacity-30 backdrop-blur-sm'>
-                  <div className='flex gap-2 flex-col md:flex-row center my-10'>
+                  <div className='flex gap-1 flex-col md:flex-row center my-10'>
                     <div className='relative flex-1'>
                       <input
                         id='departure'
@@ -42,9 +42,9 @@ const Collections: NextPage = (props: Props) => {
                           stroke='currentColor'
                         >
                           <path
-                            stroke-linecap='round'
-                            stroke-linejoin='round'
-                            stroke-width='1'
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            strokeWidth='1'
                             d='M6 18L18 6M6 6l12 12'
                           />
                         </svg>
@@ -62,12 +62,9 @@ const Collections: NextPage = (props: Props) => {
                 </div>
               </div>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-10 gap-16'>
+            <div className='grid grid-flow-row grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-10 gap-5 my-10'>
               {data.wptheme.map((i) => (
-                <div
-                  className='mx-auto px-0 md:px-4 py-4 w-80 max-w-lg max-h-60'
-                  key={i.id}
-                >
+                <div className='px-0 w-80 max-w-lg' key={i.id}>
                   <div className='bg-gray-50 dark:bg-gray-700 md:bg-white md:shadow-xl rounded-lg mb-6 '>
                     <div className='md:flex-shrink-0 h-32'>
                       <img

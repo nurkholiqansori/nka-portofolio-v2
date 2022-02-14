@@ -327,7 +327,7 @@ export const data = {
           name: 'Courses'
         },
       ],
-      img: 'wptheme/\abasha/\index.jpg',
+      img: '/wptheme/\abasha/\index.jpg',
       url: 'https:/\/\elements.envato.com/\abasha-education-learning-courses-elementor-templa-MZZJRMN',
     },
     {
@@ -348,7 +348,7 @@ export const data = {
           name: 'Cv'
         },
       ],
-      img: 'wptheme/\adama/\index.png',
+      img: '/wptheme/\adama/\index.png',
       url: 'https:/\/\elements.envato.com/\adama-personal-portfolio-resume-elementor-template-JBLGGP8'
     },
     {
@@ -369,8 +369,46 @@ export const data = {
           name: 'Industry'
         },
       ],
-      img: 'wptheme/\adhis/\index.jpg',
-      url: 'https://elements.envato.com/adhis-construction-elementor-template-kit-B54SWDA'
+      img: '/wptheme/\adhis/\index.jpg',
+      url: 'https:/\/\elements.envato.com/\adhis-construction-elementor-template-kit-B54SWDA'
+    },
+    {
+      id: 4,
+      name: 'Adopt',
+      creator: 'BimberOnline',
+      category: [
+        {
+          id: 1,
+          name: 'Animal'
+        },
+        {
+          id: 2,
+          name: 'Pet'
+        },
+        {
+          id: 3,
+          name: 'Adoption'
+        }
+      ],
+      img: '/wptheme/\adopt/\index.jpg',
+      url: 'https:/\/\elements.envato.com/\adopt-adoption-service-charity-elementor-template--GABHH6N'
+    },
+    {
+      id: 5,
+      name: 'Adra',
+      creator: 'styleWish',
+      category: [
+        {
+          id: 1,
+          name: 'Modern'
+        },
+        {
+          id: 2,
+          name: 'Creative'
+        }
+      ],
+      img: '/wptheme/\adra/\index.jpg',
+      url: 'https:/\/\elements.envato.com/\adra-modern-creative-elementor-template-kit-QAY8C9P'
     }
   ]
 }
