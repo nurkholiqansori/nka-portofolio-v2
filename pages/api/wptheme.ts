@@ -375,6 +375,69 @@ export const data = {
       url: ''
     },
     {
+      id: 19,
+      name: 'AlphaColor ',
+      creator: 'AncoraThemes',
+      category: [
+        {
+          id: 1,
+          name: 'Designer'
+        },
+        {
+          id: 2,
+          name: 'Photography'
+        },
+        {
+          id: 3,
+          name: 'Services'
+        },
+      ],
+      img: '/wptheme/\alphacolor/\index.jpg',
+      url: 'https:/\/elements.envato.com/\alphacolor-design-printing-elementor-template-kit-M4W9MX5'
+    },
+    {
+      id: 20,
+      name: 'ALTA',
+      creator: 'CreativeZeune',
+      category: [
+        {
+          id: 1,
+          name: 'Agency'
+        },
+        {
+          id: 2,
+          name: 'Creative'
+        },
+        {
+          id: 3,
+          name: 'Start Up'
+        },
+      ],
+      img: '/wptheme/\alta/\index.png',
+      url: 'https:/\/\elements.envato.com/\alta-creative-agency-elementor-template-kit-4GFHNJ8'
+    },
+    {
+      id: 21,
+      name: 'Aman ',
+      creator: 'Divine- Store',
+      category: [
+        {
+          id: 1,
+          name: 'Agency'
+        },
+        {
+          id: 2,
+          name: 'Bussiness'
+        },
+        {
+          id: 3,
+          name: 'Marketing'
+        },
+      ],
+      img: '/wptheme/\aman/\index.jpg',
+      url: 'https:/\/\elements.envato.com/\aman-multipurpose-elementor-template-kit-5ZXRUNN'
+    },
+    {
       id: 6,
       name: '',
       creator: '',
