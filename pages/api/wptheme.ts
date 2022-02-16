@@ -313,6 +313,69 @@ export const data = {
     },
     {
       id: 16,
+      name: 'Alcor',
+      creator: '42Theme',
+      category: [
+        {
+          id: 1,
+          name: 'Real Estate'
+        },
+        {
+          id: 2,
+          name: 'Rental Property'
+        },
+        {
+          id: 3,
+          name: 'Bussiness'
+        },
+      ],
+      img: '/wptheme/\alcor/\index.jpg',
+      url: 'https:/\/\elements.envato.com/\alcor-dark-real-estate-elementor-template-kit-AP5FLQT'
+    },
+    {
+      id: 17,
+      name: 'Aleos',
+      creator: 'aStylers',
+      category: [
+        {
+          id: 1,
+          name: 'Company'
+        },
+        {
+          id: 2,
+          name: 'Luxury'
+        },
+        {
+          id: 3,
+          name: 'Portfolio'
+        },
+      ],
+      img: '/wptheme/\aleos/\index.jpg',
+      url: 'https:/\/\elements.envato.com/\aleos-business-agency-elementor-template-kit-796E6WL'
+    },
+    {
+      id: 18,
+      name: 'Allfresh',
+      creator: '',
+      category: [
+        {
+          id: 1,
+          name: 'Grocery'
+        },
+        {
+          id: 2,
+          name: 'Store'
+        },
+        {
+          id: 3,
+          name: 'Market'
+        },
+      ],
+      img: '/wptheme/\allfresh/\index.jpg',
+      url: ''
+    },
+    {
+      id: 6,
       name: '',
       creator: '',
       category: [
