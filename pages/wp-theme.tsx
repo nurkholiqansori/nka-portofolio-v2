@@ -5,7 +5,7 @@ import React from 'react'
 import Body from '../components/Body'
 import { Header } from '../components/Header'
 import { Nav } from '../components/Nav'
-import { data } from './api/data'
+import { data } from './api/wptheme'
 
 type Props = {}
 
@@ -110,7 +110,9 @@ const Collections: NextPage = (props: Props) => {
                           </div>
                         </div>
                         {i.url === '' ? (
-                          <p className='text-xs'>No Preview</p>
+                          <p className='bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-500 rounded-full px-6 py-2 text-xs'>
+                            No Preview
+                          </p>
                         ) : (
                           <Link href={i.url}>
                             <a
