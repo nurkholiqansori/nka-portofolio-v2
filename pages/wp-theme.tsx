@@ -60,6 +60,7 @@ const Collections: NextPage = (props: Props) => {
                   <div className='text-gray-900 dark:text-gray-200 text-center my-5 after:content-divider'>
                     or select the category
                   </div>
+                  {data.wptheme.length -1} Theme
                 </div>
               </div>
             </div>
