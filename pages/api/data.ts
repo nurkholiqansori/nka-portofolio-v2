@@ -475,16 +475,45 @@ export const data = {
     },
     {
       id: 6,
-      name: '',
-      creator: '',
+      name: 'Agenture',
+      creator: 'Tokokoo',
       category: [
         {
           id: 1,
-          name: ''
-        }
+          name: 'Creative'
+        },
+        {
+          id: 2,
+          name: 'Agency'
+        },
+        {
+          id: 3,
+          name: 'Marketing'
+        },
       ],
-      img: '',
-      url: ''
+      img: '/wptheme/\agenture/\index.jpg',
+      url: 'https:/\/\elements.envato.com/\agenture-digital-agency-startup-elementor-template-CWY4C6F'
+    },
+    {
+      id: 6,
+      name: 'Agetha',
+      creator: 'esensifiksi',
+      category: [
+        {
+          id: 1,
+          name: 'Creative'
+        },
+        {
+          id: 2,
+          name: 'Portofolio'
+        },
+        {
+          id: 3,
+          name: 'Model'
+        },
+      ],
+      img: '/wptheme/\agetha/\index.jpg',
+      url: 'https:/\/\elements.envato.com/\agetha-creative-portfolio-template-kit-372TKKF'
     },
     {
       id: 6,
@@ -507,7 +536,7 @@ export const data = {
         {
           id: 1,
           name: ''
-        }
+        },
       ],
       img: '',
       url: ''
@@ -520,7 +549,33 @@ export const data = {
         {
           id: 1,
           name: ''
-        }
+        },
+      ],
+      img: '',
+      url: ''
+    },
+    {
+      id: 6,
+      name: '',
+      creator: '',
+      category: [
+        {
+          id: 1,
+          name: ''
+        },
+      ],
+      img: '',
+      url: ''
+    },
+    {
+      id: 6,
+      name: '',
+      creator: '',
+      category: [
+        {
+          id: 1,
+          name: ''
+        },
       ],
       img: '',
       url: ''
