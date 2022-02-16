@@ -409,6 +409,121 @@ export const data = {
       ],
       img: '/wptheme/\adra/\index.jpg',
       url: 'https:/\/\elements.envato.com/\adra-modern-creative-elementor-template-kit-QAY8C9P'
-    }
+    },
+    {
+      id: 6,
+      name: 'Agenci',
+      creator: 'DePautaMadre',
+      category: [
+        {
+          id: 1,
+          name: 'Agency'
+        },
+        {
+          id: 2,
+          name: 'Bussiness'
+        },
+        {
+          id: 3,
+          name: 'Corporate'
+        },
+      ],
+      img: '/wptheme/\agenci/\index.png',
+      url: 'https:/\/\elements.envato.com/\agenci-digital-marketing-agency-elementor-template-DTNECUM'
+    },
+    {
+      id: 7,
+      name: 'AgencyEz',
+      creator: 'eztudio',
+      category: [
+        {
+          id: 1,
+          name: 'Agency'
+        },
+        {
+          id: 2,
+          name: 'Bussiness'
+        },
+        {
+          id: 3,
+          name: 'Corporate'
+        },
+      ],
+      img: '/wptheme/\agencyez/\index.jpg',
+      url: 'https:/\/\elements.envato.com/\agencyez-elementor-pro-template-kit-M5D4E2M'
+    },
+    {
+      id: 8,
+      name: 'AgencyKit',
+      creator: 'Templatation',
+      category: [
+        {
+          id: 1,
+          name: 'Personal'
+        },
+        {
+          id: 2,
+          name: 'Portofolio'
+        },
+        {
+          id: 3,
+          name: 'Creative'
+        },
+      ],
+      img: '/wptheme/\agencykit/\index.jpg',
+      url: 'https:/\/\elements.envato.com/\agencykit-portfolio-elementor-template-kit-VBBXVD3'
+    },
+    {
+      id: 6,
+      name: '',
+      creator: '',
+      category: [
+        {
+          id: 1,
+          name: ''
+        }
+      ],
+      img: '',
+      url: ''
+    },
+    {
+      id: 6,
+      name: '',
+      creator: '',
+      category: [
+        {
+          id: 1,
+          name: ''
+        }
+      ],
+      img: '',
+      url: ''
+    },
+    {
+      id: 6,
+      name: '',
+      creator: '',
+      category: [
+        {
+          id: 1,
+          name: ''
+        }
+      ],
+      img: '',
+      url: ''
+    },
+    {
+      id: 6,
+      name: '',
+      creator: '',
+      category: [
+        {
+          id: 1,
+          name: ''
+        }
+      ],
+      img: '',
+      url: ''
+    },
   ]
 }

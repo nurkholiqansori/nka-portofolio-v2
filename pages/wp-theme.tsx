@@ -1,4 +1,5 @@
 import { NextPage } from 'next'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
 import Body from '../components/Body'
@@ -77,7 +78,7 @@ const Collections: NextPage = (props: Props) => {
                     <div className='py-1'>
                       <div className='p-4'>
                         <h2 className='truncate font-bold mb-2 text-2xl text-gray-800 dark:text-gray-400 tracking-normal'>
-                          {i.name}
+                          {i.name === '' ? 'No Name' : i.name}
                         </h2>
 
                         {i.category[0].name ? (
@@ -99,20 +100,30 @@ const Collections: NextPage = (props: Props) => {
                       <div className='flex items-center justify-between mx-3 md:mx-0 p-2 md:p-4 '>
                         <div className='flex items-center'>
                           <div className='text-sm'>
-                            <p className='text-black dark:text-gray-400 leading-none'>
-                              By {i.creator}
-                            </p>
+                            {i.creator === '' ? (
+                              ''
+                            ) : (
+                              <p className='text-black dark:text-gray-400 leading-none'>
+                                By {i.creator}
+                              </p>
+                            )}
                           </div>
                         </div>
-                        <a
-                          target='_blank'
-                          rel='noreferrer noopener'
-                          title={'Theme ' + i.name}
-                          href={i.url}
-                          className='bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-500 hover:bg-gray-500 hover:text-white rounded-full px-6 py-2 text-xs'
-                        >
-                          Preview
-                        </a>
+                        {i.url === '' ? (
+                          <p className='text-xs'>No Preview</p>
+                        ) : (
+                          <Link href={i.url}>
+                            <a
+                              target='_blank'
+                              rel='noreferrer noopener'
+                              title={'Theme ' + i.name}
+                              className='bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-500 hover:bg-gray-500 hover:text-white rounded-full px-6 py-2 text-xs'
+                            >
+                              {' '}
+                              Preview
+                            </a>
+                          </Link>
+                        )}
                       </div>
                     </div>
                   </div>
