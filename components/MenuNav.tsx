@@ -24,10 +24,6 @@ const nav = [
     name: 'Github',
     link: 'github',
   },
-  {
-    name: 'Collection',
-    link: 'wp-theme'
-  }
 ]
 
 const MenuNav = ({ show }: Props) => {

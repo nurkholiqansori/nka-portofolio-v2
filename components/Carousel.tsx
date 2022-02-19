@@ -60,13 +60,6 @@ const Carousel = () => {
           description='My work experience'
           link='/github'
         />
-        <ListCarousel
-          title='Collection Theme WP'
-          number={4}
-          img=''
-          description='Theme Wordpress'
-          link='/wp-theme'
-        />
       </div>
       <button
         className={
