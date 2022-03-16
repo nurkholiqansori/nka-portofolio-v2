@@ -12,9 +12,6 @@ function addPage(page) {
   const route = path === '/index' ? '' : path
   return `  <url>
     <loc>${`${process.env.SITE_URL}${route}`}</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
   </url>`
 }
 
