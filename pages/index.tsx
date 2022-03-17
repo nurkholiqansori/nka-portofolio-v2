@@ -3,14 +3,34 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import React from 'react'
 import Body from '../components/Body'
-import Carousel from '../components/Carousel'
 import { Header } from '../components/Header'
 import { Nav } from '../components/Nav'
 import logo from '../public/logo.png'
+import Carousel from 'react-multi-carousel'
+import 'react-multi-carousel/lib/styles.css'
+import ListCarousel from '../components/ListCarousel'
+import Link from 'next/link'
 
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    partialVisibilityGutter: 40,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    partialVisibilityGutter: 30,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    partialVisibilityGutter: 30,
+  },
+}
 
 const Home: NextPage = () => {
-  const router = useRouter()  
+  const router = useRouter()
 
   return (
     <>
@@ -35,9 +55,35 @@ const Home: NextPage = () => {
               likes Javascript Framework
             </div>
           </div>
-          <div className='flex items-center'>
-            <Carousel />
-          </div>
+          <Carousel
+            responsive={responsive}
+            slidesToSlide={1}
+            infinite
+            centerMode
+            swipeable
+            sliderClass=''
+            containerClass='carousel-container'
+            itemClass='image-item mx-7'
+          >
+            <ListCarousel
+              title='About'
+              img='https://images.unsplash.com/photo-1549989476-69a92fa57c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
+              description='My curriculum Vitae'
+              link='/about'
+            />
+            <ListCarousel
+              title='Portofolio'
+              img='https://images.unsplash.com/photo-1549989476-69a92fa57c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
+              description='My Portofolio'
+              link='/portofolio'
+            />
+            <ListCarousel
+              title='Github'
+              img='https://images.unsplash.com/photo-1549989476-69a92fa57c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
+              description='My work experience'
+              link='/github'
+            />
+          </Carousel>
         </div>
       </Body>
     </>

@@ -3,17 +3,15 @@ import Link from 'next/link'
 
 interface Props {
   title: string
-  number: number
-  img: any
-  description: string | number
-  link: any
+  img?: string
+  description?: string
+  link: string
 }
 
-const ListCarousel = ({ title, number, img, description, link }: Props) => {
+const ListCarousel = ({ title, img, description, link }: Props) => {
   return (
     <div
-      className='rounded-xl w-56 md:w-80 p-5 snap-center bg-white bg-opacity-40 backdrop-blur'
-      id={`${number}`}
+      className='rounded-xl p-5 snap-center bg-white bg-opacity-40 backdrop-blur w-48'
     >
       <div className='mt-28'></div>
       <div className='text-sm text-white dark:text-gray-100'>{description}</div>
