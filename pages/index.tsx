@@ -67,19 +67,16 @@ const Home: NextPage = () => {
           >
             <ListCarousel
               title='About'
-              img='https://images.unsplash.com/photo-1549989476-69a92fa57c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
               description='My curriculum Vitae'
               link='/about'
             />
             <ListCarousel
               title='Portofolio'
-              img='https://images.unsplash.com/photo-1549989476-69a92fa57c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
               description='My Portofolio'
               link='/portofolio'
             />
             <ListCarousel
               title='Github'
-              img='https://images.unsplash.com/photo-1549989476-69a92fa57c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
               description='My work experience'
               link='/github'
             />
