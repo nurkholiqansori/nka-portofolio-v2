@@ -233,6 +233,14 @@ export const data = {
       date: 'Jan 2022',
       img: '',
     },
+    {
+      id: 12,
+      title: 'Web Development Lessons (Node.js)',
+      company: 'Progate',
+      credential: 'https://progate.com/path_certificate/c3fe8a29r7hxfp',
+      date: 'Feb 2022',
+      img: '',
+    },
   ],
   project: [
     {
@@ -287,25 +295,6 @@ export const data = {
       ],
       preview: '',
       startTime: 'Dec 2021',
-    },
-    {
-      id: 3,
-      name: 'Astroliq',
-      description: '',
-      tools: [
-        {
-          id: 1,
-          name: 'NextJS',
-          svg: '',
-        },
-        {
-          id: 2,
-          name: 'MaterialUI',
-          svg: '',
-        }
-      ],
-      preview: '',
-      startTime: 'Jan 2021',
     },
   ],
 }
