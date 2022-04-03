@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [router])
 
   return (
-    <ThemeProvider attribute='class'>
+    <ThemeProvider attribute='class' enableSystem={false} defaultTheme='dark'>
       <div className='bg-gradient-to-br from-cyan-500 to-fuchsia-500 dark:from-gray-800 dark:to-black'>
         <div className='container mx-auto'>
           <Component {...pageProps} />
